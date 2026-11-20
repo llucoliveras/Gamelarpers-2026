@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Gamelarpers-2026"
+run/main_scene="uid://dx6l740keq3vk"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/icon.svg"
+
+[autoload]
+
+CustomLevelManager="*uid://cbw0gao7d5vmp"
 
 [display]
 
