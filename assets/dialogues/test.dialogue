@@ -6,5 +6,4 @@ Cliente 1: Un xuixo estandard de [wave]20cm[/wave]
 Tú: Perfecte, ara en faig un de [wave]20cm[/wave] per tu
 Cliente 1: Pero aniràs [speed=0.1]molt lent per fer-lo o [speed=2]aniràs molt ràpid?
 Tú: Doncs tardaré... [wait=2] una quantitat normal
-Tú: Em pots repetir el que volies?
-Cliente 1: Sí clar => pedido
+=> END

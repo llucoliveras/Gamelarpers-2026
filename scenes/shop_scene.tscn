@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b08sebeqhg0pb" path="res://scripts/shop_scene.gd" id="1_p7evi"]
 [ext_resource type="PackedScene" uid="uid://je1xyhj483bh" path="res://scenes/client.tscn" id="2_hovpq"]
+[ext_resource type="PackedScene" uid="uid://do7obudvsjjyk" path="res://assets/dialogues/balloon.tscn" id="3_hovpq"]
 
 [sub_resource type="Animation" id="Animation_tlo24"]
 length = 0.001
@@ -45,6 +46,9 @@ script = ExtResource("1_p7evi")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=143911759]
 libraries/ = SubResource("AnimationLibrary_hwlf8")
+autoplay = &"shop_entry"
 
 [node name="Client" parent="." unique_id=1856437151 instance=ExtResource("2_hovpq")]
 position = Vector2(-350, 335)
+
+[node name="ExampleBalloon" parent="." unique_id=38036521 instance=ExtResource("3_hovpq")]
