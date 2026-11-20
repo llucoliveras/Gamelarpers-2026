@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bsm4gt0efifqs"]
+
+[ext_resource type="Script" uid="uid://b08sebeqhg0pb" path="res://scripts/shop_scene.gd" id="1_p7evi"]
+[ext_resource type="PackedScene" uid="uid://je1xyhj483bh" path="res://scenes/client.tscn" id="2_hovpq"]
+
+[sub_resource type="Animation" id="Animation_tlo24"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Client:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-350, 335)]
+}
+
+[sub_resource type="Animation" id="Animation_c04yc"]
+resource_name = "shop_entry"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Client:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-350, 335), Vector2(250, 335)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hwlf8"]
+_data = {
+&"RESET": SubResource("Animation_tlo24"),
+&"shop_entry": SubResource("Animation_c04yc")
+}
+
+[node name="ShopScene" type="Node2D" unique_id=1255581658]
+script = ExtResource("1_p7evi")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=143911759]
+libraries/ = SubResource("AnimationLibrary_hwlf8")
+
+[node name="Client" parent="." unique_id=1856437151 instance=ExtResource("2_hovpq")]
+position = Vector2(-350, 335)
