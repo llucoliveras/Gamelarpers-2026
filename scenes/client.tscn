@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://je1xyhj483bh"]
 
-[ext_resource type="Texture2D" uid="uid://b0kfsrbbjopbl" path="res://assets/istockphoto-1345388323-612x612.jpg" id="1_lgb4g"]
+[ext_resource type="Texture2D" uid="uid://d38dskflxqtt3" path="res://assets/iio3xm4o1sn51.png" id="1_5f806"]
 
 [node name="Client" type="Node2D" unique_id=1856437151]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2131339603]
-texture = ExtResource("1_lgb4g")
+texture = ExtResource("1_5f806")

@@ -19,6 +19,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	print("animation ended ", anim_name)
 	if anim_name == "shop_entry":
 		DialogueManager.show_dialogue_balloon(TEST, "start")
+		animation_player.play("idle")
 
 func _on_dialogue_ended(dialogue):
 	scene_transition = get_tree().current_scene.find_child("SceneTransition")
