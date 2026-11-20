@@ -25,7 +25,9 @@ func fade_out() -> void:
 	
 	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
-func load_scene(scene_file_path: String) -> void:
+func load_scene(scene_file_path: String, params: Dictionary = {}) -> void:
 	await fade_in()
-	CustomLevelManager.load_level(scene_file_path)
+	var new_scene = CustomLevelManager.load_level(scene_file_path)
+	if params != {}:
+		new_scene.setup(params)
 	await fade_out()
