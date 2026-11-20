@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://nnrfows33rm0"
+path="res://.godot/imported/example.dialogue-a1a7e222e319ae22970442c9d04060f9.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/example.dialogue"
+dest_files=["res://.godot/imported/example.dialogue-a1a7e222e319ae22970442c9d04060f9.tres"]
+
+[params]
+
+defaults=true

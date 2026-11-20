@@ -18,11 +18,24 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 CustomLevelManager="*uid://cbw0gao7d5vmp"
+DialogueManager="*uid://c3rodes2l3gxb"
+
+[dialogue_manager]
+
+runtime/balloon_path="res://assets/dialogues/balloon.tscn"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://assets/dialogues/example.dialogue", "res://assets/dialogues/test.dialogue")
 
 [physics]
 
