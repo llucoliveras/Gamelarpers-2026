@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dfw5lecjc4qf5"]
+
+[ext_resource type="Script" uid="uid://cfxbgi3fstxbu" path="res://càlcul_xuixos_.gd" id="1_nq5a4"]
+[ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/icon.svg" id="1_rl7f5"]
+
+[node name="Ventana_evaluacion" type="Node2D" unique_id=2091454239]
+script = ExtResource("1_nq5a4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=424112540]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=638324067]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 260.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=863025111]
+layout_mode = 2
+texture = ExtResource("1_rl7f5")
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=1578972832]
+layout_mode = 2
+texture = ExtResource("1_rl7f5")
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1149186524]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -136.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+alignment = 1
+
+[node name="ButtonLess" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1529008935]
+layout_mode = 2
+icon = ExtResource("1_rl7f5")
+
+[node name="ButtonPlus" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=2000231698]
+layout_mode = 2
+icon = ExtResource("1_rl7f5")
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/ButtonLess" to="." method="_al_pulsar_boton"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/ButtonPlus" to="." method="_on_button_pressed"]
