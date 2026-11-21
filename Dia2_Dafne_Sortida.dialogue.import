@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://butaocno6r7p"
+path="res://.godot/imported/Dia2_Dafne_Sortida.dialogue-d5b70b3f5b51ef33c51a139fb7702558.tres"
+
+[deps]
+
+source_file="res://Dia2_Dafne_Sortida.dialogue"
+dest_files=["res://.godot/imported/Dia2_Dafne_Sortida.dialogue-d5b70b3f5b51ef33c51a139fb7702558.tres"]
+
+[params]
+
+defaults=true

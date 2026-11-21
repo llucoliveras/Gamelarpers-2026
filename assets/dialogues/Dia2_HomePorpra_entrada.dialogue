@@ -1,6 +1,7 @@
+~ start
 Home Porpra: [shake]Hola. Vull xuixos.[/shake]
-Tu: D'acord... Quina mida?
-Home Porpra: [shake]Com un nen de [/shake][wave]sis[/wave][shake] o [/shake][wave]set[/wave][shake] anys.[/shake]
+Tu: D'acord... Quants?
+Home Porpra: [shake]Tants com un nen de [/shake][wave]sis[/wave][shake] o [/shake][wave]set[/wave][shake] anys.[/shake]
 Tu: Com[wait=0.1].[wait=0.1].[wait=0.1].[wait=0.1]?
 Tu: Bueno, d'acord.
-
+=> END
