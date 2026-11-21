@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://chan41131km2o"
+path="res://.godot/imported/Dia1_Avia_entrada.dialogue-2d9cc6dc630fb48900d5cb28b80abb74.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia1_Avia_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia1_Avia_entrada.dialogue-2d9cc6dc630fb48900d5cb28b80abb74.tres"]
+
+[params]
+
+defaults=true

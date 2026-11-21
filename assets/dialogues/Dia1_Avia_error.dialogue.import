@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dmvw0qw2bwym8"
+path="res://.godot/imported/Dia1_Avia_error.dialogue-47692aa5bac1f472c5d6cd411dd65837.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia1_Avia_error.dialogue"
+dest_files=["res://.godot/imported/Dia1_Avia_error.dialogue-47692aa5bac1f472c5d6cd411dd65837.tres"]
+
+[params]
+
+defaults=true
