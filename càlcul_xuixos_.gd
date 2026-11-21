@@ -1,6 +1,6 @@
 extends Node2D
 
-# Variables de estado simplificadas
+# Variables de estado (mínimo 1 xuxo siempre)
 var quantitatXuixo = 1
 var customer = null
 var multiplicadorActual = 1
@@ -8,7 +8,7 @@ var multiplicadorActual = 1
 # Límite visual de xuxos configurado a 6
 const LIMITE_VISUAL = 6
 
-# Referencias a los botones usando el truco del camino único (%)
+# Referencias a los botones usando nombres únicos (%)
 @onready var botonPlus: Button = %ButtonPlus
 @onready var botonLess: Button = %ButtonLess
 @onready var botonMultiplicador: TextureButton = %multiplicadorActual2
@@ -34,7 +34,34 @@ func _ready() -> void:
 	if textoMultiplicador:
 		textoMultiplicador.text = "x" + str(multiplicadorActual)
 		
+	# Configuramos los xuxos del contenedor al arrancar por seguridad
+	preparar_contenedor_xuxos()
+	
+	# Forzamos la primera actualización visual
 	actualizar_fase_dos()
+
+# Función para asegurar que todos los huecos tienen textura y tamaño controlado
+func preparar_contenedor_xuxos() -> void:
+	if not contenedorXuixo:
+		return
+		
+	var hijos = contenedorXuixo.get_children()
+	if hijos.size() == 0:
+		return
+		
+	# Pillamos la textura del primer xuxo como referencia principal
+	var texturaBase = hijos[0].texture
+	
+	for hijo in hijos:
+		if hijo is TextureRect:
+			# Si duplicaste los nodos y olvidaron la textura, les ponemos la del primero
+			if not hijo.texture and texturaBase:
+				hijo.texture = texturaBase
+				
+			# Forzamos el modo de expansión para que las imágenes gigantes no rompan el diseño
+			hijo.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+			# Tamaño fijo de cada xuxo en el contenedor (ajústalo a los píxeles que quieras)
+			hijo.custom_minimum_size = Vector2(64, 64)
 
 func _al_pulsar_mas() -> void: 
 	var incremento = 1 * multiplicadorActual
@@ -44,10 +71,12 @@ func _al_pulsar_mas() -> void:
 
 func _al_pulsar_menos() -> void: 
 	var decremento = 1 * multiplicadorActual
+	# Blindaje: nunca baja de 1
 	if quantitatXuixo - decremento >= 1:
 		quantitatXuixo -= decremento
 	else:
 		quantitatXuixo = 1 
+		
 	print("¡Botón (-) pulsado! Restando ", decremento, ". Xuxos totales: ", quantitatXuixo)
 	actualizar_fase_dos()
 
@@ -64,24 +93,23 @@ func _al_pulsar_multiplicador() -> void:
 	if textoMultiplicador:
 		textoMultiplicador.text = "x" + str(multiplicadorActual)
 
-# Función de guardado simplificada: solo empaqueta el dato y prepara el fade/transición
 func _al_pulsar_guardar() -> void:
 	print("--- GUARDANDO Y SALIENDO ---")
-	print("Número final de xuxos a enviar: ", quantitatXuixo)
+	print("Número final de xuxos enviados: ", quantitatXuixo)
 	
-	# Diccionario ligero únicamente con lo necesario para la escena de diálogo
 	var parametrosResultado = {
 		"quantitatXuixo": quantitatXuixo
 	}
-	
-	# TODO: Aquí puedes llamar a tu script de transición con fade (ej: SceneTransition.fade_to(...) )
-	# pasándole 'parametrosResultado' para que la otra escena reciba el número de xuxos directamente.
+	# Aquí irá tu lógica de fundido (fade-in)
 
-# Lógica para mostrar las imágenes divididas (hasta 6) o activar el contador numérico
 func actualizar_fase_dos() -> void:
+	if quantitatXuixo < 1:
+		quantitatXuixo = 1
+
 	if contenedorXuixo:
 		var hijos = contenedorXuixo.get_children()
 		for i in range(hijos.size()):
+			# Mostramos estrictamente desde 0 hasta la cantidad actual (tope 6)
 			if i < quantitatXuixo and i < LIMITE_VISUAL:
 				hijos[i].visible = true
 			else:
@@ -99,6 +127,10 @@ func setup(parametros) -> void:
 		customer = parametros.customer
 		if customer.target_image: 
 			%TextureRect.texture = customer.target_image
+			
+	actualizar_fase_dos()
+
+
 
 func _on_button_pressed() -> void:
 	pass # Replace with function body.
