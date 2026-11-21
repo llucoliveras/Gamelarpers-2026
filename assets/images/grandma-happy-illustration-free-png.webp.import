@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3fewqfi8h2jy"
-path="res://.godot/imported/istockphoto-2215008441-612x612.jpg-0871616bd0b052e0a483e45b960f482c.ctex"
+uid="uid://ceysl2snv1tr7"
+path="res://.godot/imported/grandma-happy-illustration-free-png.webp-013904cee1fab389f0318108beba2c19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/istockphoto-2215008441-612x612.jpg"
-dest_files=["res://.godot/imported/istockphoto-2215008441-612x612.jpg-0871616bd0b052e0a483e45b960f482c.ctex"]
+source_file="res://assets/images/grandma-happy-illustration-free-png.webp"
+dest_files=["res://.godot/imported/grandma-happy-illustration-free-png.webp-013904cee1fab389f0318108beba2c19.ctex"]
 
 [params]
 

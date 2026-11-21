@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d38dskflxqtt3"
-path="res://.godot/imported/iio3xm4o1sn51.png-e73592de261bf7f4a755b85a263f83ea.ctex"
+uid="uid://cquemq4t2wxt1"
+path="res://.godot/imported/noia_generica_1.png-0d7c15a52d6ee0ddff884729a280dd02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/iio3xm4o1sn51.png"
-dest_files=["res://.godot/imported/iio3xm4o1sn51.png-e73592de261bf7f4a755b85a263f83ea.ctex"]
+source_file="res://assets/images/noia_generica_1.png"
+dest_files=["res://.godot/imported/noia_generica_1.png-0d7c15a52d6ee0ddff884729a280dd02.ctex"]
 
 [params]
 
