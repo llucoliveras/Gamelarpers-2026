@@ -1,5 +1,6 @@
 extends Node2D
 
+# Variables definidas con la segunda palabra en mayúscula
 var quantitatXuixo = 1
 var day = -1
 var clienteActual = 1
@@ -10,36 +11,39 @@ var tolerancia = 0.0
 
 var multiplicadorActual = 1
 
-# Referencias a los botones y al multiplicador
+# Límite visual estricto de xuxos en el contenedor (10)
+const LIMITE_VISUAL = 6
+
+# Referencias a los botones principales
 @onready var botonPlus: Button = $CanvasLayer/HBoxContainer/ButtonPlus
 @onready var botonLess: Button = $CanvasLayer/HBoxContainer/ButtonLess
 @onready var botonMultiplicador: TextureButton = $CanvasLayer/HBoxContainer2/multiplicadorActual2
 @onready var textoMultiplicador: Label = $CanvasLayer/HBoxContainer2/multiplicadorActual2/TextoLabel
 
-# Referencia al nuevo contador de bollitos (ajusta la ruta exacta si tu HBox contenedor tiene otro nombre)
+# Referencias exactas a tu nueva estructura visual de la Fase 2
+@onready var contenedorXuixo: HBoxContainer = $CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo
 @onready var contadorBollitos: Label = $CanvasLayer/VBoxContainer/HBoxContainer/contador
 
 func _ready() -> void:
+	# Conexión de botones
 	if botonPlus:
 		botonPlus.pressed.connect(_al_pulsar_mas)
 	if botonLess:
 		botonLess.pressed.connect(_al_pulsar_menos)
-	
 	if botonMultiplicador:
 		botonMultiplicador.pressed.connect(_al_pulsar_multiplicador)
 	
 	if textoMultiplicador:
 		textoMultiplicador.text = "x" + str(multiplicadorActual)
 		
-	# Actualizamos el texto del contador al iniciar la escena
-	actualizar_contador_visual()
+	# Inicializamos la vista de la fase 2
+	actualizar_fase_dos()
 
 func _al_pulsar_mas() -> void: 
 	var incremento = 1 * multiplicadorActual
 	quantitatXuixo += incremento
 	print("¡Botón (+) pulsado! Sumando ", incremento, ". Xuxos totales: ", quantitatXuixo)
-	
-	actualizar_contador_visual()
+	actualizar_fase_dos()
 
 func _al_pulsar_menos() -> void: 
 	var decremento = 1 * multiplicadorActual
@@ -48,8 +52,7 @@ func _al_pulsar_menos() -> void:
 	else:
 		quantitatXuixo = 1 
 	print("¡Botón (-) pulsado! Restando ", decremento, ". Xuxos totales: ", quantitatXuixo)
-	
-	actualizar_contador_visual()
+	actualizar_fase_dos()
 
 func _al_pulsar_multiplicador() -> void:
 	if multiplicadorActual == 1:
@@ -64,17 +67,28 @@ func _al_pulsar_multiplicador() -> void:
 	if textoMultiplicador:
 		textoMultiplicador.text = "x" + str(multiplicadorActual)
 
-# Función para actualizar el texto del contador en pantalla
-func actualizar_contador_visual() -> void:
+# Lógica inteligente para mostrar las imágenes divididas o el contador
+func actualizar_fase_dos() -> void:
+	# 1. Gestionar las 10 imágenes dentro de contenedor_xuixo
+	if contenedorXuixo:
+		var hijos = contenedorXuixo.get_children()
+		for i in range(hijos.size()):
+			# Si la cantidad actual cubre este índice (y no pasamos de 10), se muestra
+			if i < quantitatXuixo and i < LIMITE_VISUAL:
+				hijos[i].visible = true
+			else:
+				# Si sobra o superamos los 10, se oculta para congelar el tamaño visual mínimo
+				hijos[i].visible = false
+
+	# 2. Gestionar el contador numérico de al lado
 	if contadorBollitos:
-		# Si superamos los 10, mostramos el número exacto al lado del bollito
 		contadorBollitos.text = "x " + str(quantitatXuixo)
 		
-		# Opcional: puedes hacer que el contador solo sea visible si hay más de 10, o dejarlo siempre visible
-		if quantitatXuixo >= 10:
+		# El contador se muestra solo si pasamos de 10 (o puedes dejarlo siempre visible si prefieres)
+		if quantitatXuixo > LIMITE_VISUAL:
 			contadorBollitos.visible = true
 		else:
-			contadorBollitos.visible = true # Cambia a false si prefieres que se oculte cuando son pocos
+			contadorBollitos.visible = false
 
 func setup(parametros) -> void: 
 	if parametros.has("day") and parametros.day: 
@@ -88,8 +102,7 @@ func setup(parametros) -> void:
 	if parametros.has("tolerancia") and parametros.tolerancia:
 		tolerancia = parametros.tolerancia
 		
-	# Actualizamos por si los parámetros traen un valor inicial de xuxos
-	actualizar_contador_visual()
+	actualizar_fase_dos()
 
 func _on_button_pressed() -> void:
 	pass # Replace with function body.
