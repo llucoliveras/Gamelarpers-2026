@@ -3,7 +3,8 @@ extends Resource
 
 @export var customer_name: String
 @export var portrait: Texture2D
-@export var target_number: int # El número que el jugador debe descubrir
+@export var target_mesure: int
+@export var target_quantity: int
 @export var target_image: Texture2D
 
 # Rutas o títulos para el Dialogue Manager

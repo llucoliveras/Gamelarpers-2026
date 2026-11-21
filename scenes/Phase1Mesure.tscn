@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cxlf3hwqoq45w"]
+
+[ext_resource type="Script" uid="uid://ctwoo84na1f2k" path="res://scripts/phase_1_mesure.gd" id="1_n0d5s"]
+[ext_resource type="Texture2D" uid="uid://dhit5nvpevvcy" path="res://assets/images/baker_table_top_view.jpg" id="2_4tpf0"]
+[ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/xuixo.png" id="3_8cg0o"]
+[ext_resource type="Script" uid="uid://b8kthlws6qnsp" path="res://scripts/mesure_line.gd" id="4_4tpf0"]
+
+[node name="Phase1Mesure" type="Node2D" unique_id=1514824332]
+script = ExtResource("1_n0d5s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1338662325]
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer" unique_id=1372043421]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -69.0
+offset_right = -611.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.13, 2.13)
+texture = ExtResource("2_4tpf0")
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1382017833]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer" unique_id=1102539320]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=1908462118]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="AspectRatioContainer" type="HBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer/MarginContainer" unique_id=314641734]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(900, 150)
+custom_maximum_size = Vector2(900, 150)
+layout_mode = 2
+
+[node name="ObjectImage" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer/MarginContainer/AspectRatioContainer" unique_id=92588280]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, -1)
+layout_mode = 2
+texture = ExtResource("3_8cg0o")
+expand_mode = 4
+
+[node name="Ruler" type="Control" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=432775412]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/CenterContainer/VBoxContainer/Ruler" unique_id=1662748334]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" parent="CanvasLayer/CenterContainer/VBoxContainer/Ruler" unique_id=885762996]
+script = ExtResource("4_4tpf0")
+start_point = Vector2(25, 0)
+end_point = Vector2(925, 0)
+
+[node name="Line2D" type="Line2D" parent="CanvasLayer/CenterContainer/VBoxContainer/Ruler/Node2D" unique_id=1740822280]
+width = 4.0
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer/Ruler/Node2D" unique_id=1931675674]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=165032351]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/CenterContainer/VBoxContainer/MarginContainer2" unique_id=966409600]
+unique_name_in_owner = true
+layout_mode = 2
+step = 0.1
+
+[node name="Button" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=8240273]
+layout_mode = 2
+text = "Save"
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

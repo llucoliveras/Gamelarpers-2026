@@ -2,23 +2,39 @@
 
 [ext_resource type="Script" uid="uid://cfxbgi3fstxbu" path="res://càlcul_xuixos_.gd" id="1_nq5a4"]
 [ext_resource type="Texture2D" uid="uid://ceysl2snv1tr7" path="res://assets/images/grandma-happy-illustration-free-png.webp" id="2_kw1ds"]
+[ext_resource type="Texture2D" uid="uid://h6cv5rum2e0u" path="res://assets/images/xuixu.png" id="3_7b0at"]
 [ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/images/icon.svg" id="3_kw1ds"]
 
 [node name="Ventana_evaluacion" type="Node2D" unique_id=2091454239]
 script = ExtResource("1_nq5a4")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1258480579]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2" unique_id=740984703]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+texture = ExtResource("3_kw1ds")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=424112540]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=638324067]
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -84.5
-offset_right = 84.5
-offset_bottom = 260.0
+offset_right = 4.0
+offset_bottom = 359.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer/VBoxContainer" unique_id=1020066081]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=863025111]
 unique_name_in_owner = true
@@ -28,63 +44,83 @@ texture = ExtResource("2_kw1ds")
 stretch_mode = 5
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=1637211224]
+custom_minimum_size = Vector2(128, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 alignment = 1
 
 [node name="contenedor_xuixo" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=1830540818]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 0)
 layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
 
 [node name="xuixo1" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1578972832]
+propagate_maximum_size = true
 layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1944874327]
+[node name="xuixo2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1065842717]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1540647946]
+[node name="xuixo3" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=27681835]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo4" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1328361335]
+[node name="xuixo4" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=152196879]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo5" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=58456503]
+[node name="xuixo5" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1531812853]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo6" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=524845267]
+[node name="xuixo6" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=2036666084]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo7" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1190912766]
+[node name="xuixo7" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=303299671]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo8" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1990045656]
+[node name="xuixo8" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1293261205]
+propagate_maximum_size = true
 layout_mode = 2
-texture = ExtResource("3_kw1ds")
+size_flags_horizontal = 3
+texture = ExtResource("3_7b0at")
+expand_mode = 1
 stretch_mode = 5
 
-[node name="xuixo9" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=798275386]
-layout_mode = 2
-texture = ExtResource("3_kw1ds")
-stretch_mode = 5
-
-[node name="xuixo10" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1011625876]
-layout_mode = 2
-texture = ExtResource("3_kw1ds")
-stretch_mode = 5
-
-[node name="contador" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=1594688678]
+[node name="contador" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/contenedor_xuixo" unique_id=1594688678]
 unique_name_in_owner = true
 layout_mode = 2
 horizontal_alignment = 2
@@ -134,9 +170,6 @@ alignment = 2
 unique_name_in_owner = true
 layout_mode = 2
 icon = ExtResource("3_kw1ds")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1264201035]
-texture = ExtResource("3_kw1ds")
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/HBoxContainer2/ButtonPlus" to="." method="_on_button_pressed"]
 [connection signal="theme_changed" from="CanvasLayer/VBoxContainer/HBoxContainer2/multiplicadorActual2" to="." method="_on_multiplicador_actual_2_theme_changed"]

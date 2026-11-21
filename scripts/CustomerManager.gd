@@ -1,11 +1,11 @@
 extends Node
 
 const ERROR_MARGIN: float = 0.10
-const AVIA_CARME = preload("uid://cb3ln805kbi7")
-const CLIENT_2 = preload("uid://5lqc8deoay2i")
+const PALLASSO_DIA_2 = preload("uid://b5rgh80sdtahf")
+const PALLASSO_DIA_3 = preload("uid://c4eqprumavpr")
 
 var customer_queue: Array[CustomerData] = [
-	AVIA_CARME, CLIENT_2
+	PALLASSO_DIA_2, PALLASSO_DIA_3
 ]
 var current_index: int = 0
 

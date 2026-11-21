@@ -58,7 +58,7 @@ func _load_stage():
 	if not scene_transition: return
 	var target_scene: String = ""
 	if customer.stage_1:
-		target_scene = "res://scenes/temporary_scene.tscn"
+		target_scene = "res://scenes/Phase1Mesure.tscn"
 	elif customer.stage_2:
 		target_scene = "res://CàlculXuixos_.tscn"
 	if target_scene == "": 

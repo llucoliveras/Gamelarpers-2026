@@ -1,8 +1,8 @@
 ~ start
-Pallaso: [wave]Hola![/wave] 
+Pallasso: [wave]Hola![/wave] 
 Tu: Hola. Avui sembles mes content!
-Pallaso: [wave] Si! Avui no m'han pres més seriosament! [/wave] 
+Pallasso: [wave] Si! Avui no m'han pres més seriosament! [/wave] 
 Tu: Siusplau[wait=0.5].[wait=0.5].[wait=0.5]. simplement fes la comanda. 
-Pallaso: [wave] Vull xuixos de 3 cm i tants  com l'elefant del circ![/wave] 
+Pallasso: [wave] Vull xuixos de 3 cm i tants  com l'elefant del circ![/wave] 
 Tu: Okay, ara els faig.
 => END
