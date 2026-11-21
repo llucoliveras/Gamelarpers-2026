@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://esfqy0wxhime"
+path="res://.godot/imported/test_error_mes_gran.dialogue-722e984a6ce56a2c47b9c9bd9aa7c5a6.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/test_error_mes_gran.dialogue"
+dest_files=["res://.godot/imported/test_error_mes_gran.dialogue-722e984a6ce56a2c47b9c9bd9aa7c5a6.tres"]
+
+[params]
+
+defaults=true
