@@ -1,11 +1,4 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Amir: Escolta pocasolta! Fes els xuixos una mica més grans, que no va d'uns centims..
+Yo: Okay, disculpa.
 => END

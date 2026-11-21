@@ -1,11 +1,5 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Pallasso: Que graciós. Era tans xuixos com un elefant, no xuixos tan grans com elefants.
+Tu: Emmm, t'has passat una mica no?
+Pallasso: Perdona, pero fes-ne de mes petits.
 => END
