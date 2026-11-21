@@ -19,6 +19,7 @@ config/icon="res://assets/icon.svg"
 
 CustomLevelManager="*uid://cbw0gao7d5vmp"
 DialogueManager="*uid://c3rodes2l3gxb"
+CustomerManager="*uid://d1mubj2u0awv1"
 
 [dialogue_manager]
 
@@ -35,7 +36,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://assets/dialogues/example.dialogue", "res://assets/dialogues/test.dialogue", "res://assets/dialogues/Dia3_Rata_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Sortida.dialogue", "res://assets/dialogues/test_entrada.dialogue", "res://assets/dialogues/test_error_mes_gran.dialogue", "res://assets/dialogues/test_error_mes_petit.dialogue", "res://assets/dialogues/test_sortida.dialogue", "res://assets/dialogues/Dia2_Pallaso_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Error_Petit.dialogue", "res://assets/dialogues/Dia2_Pallaso_Error_Gran.dialogue", "res://assets/dialogues/Dia2_Pallaso_Error_Petit.dialogue", "res://assets/dialogues/Dia2_Pallaso_Sortida.dialogue", "res://assets/dialogues/Dia3_Pallaso_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Error_Gran.dialogue", "res://Dia3_Pallaso_Sortida.dialogue")
+locale/translations_pot_files=PackedStringArray("res://assets/dialogues/example.dialogue", "res://assets/dialogues/test.dialogue", "res://assets/dialogues/Dia3_Rata_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Sortida.dialogue", "res://assets/dialogues/test_entrada.dialogue", "res://assets/dialogues/test_error_mes_gran.dialogue", "res://assets/dialogues/test_error_mes_petit.dialogue", "res://assets/dialogues/test_sortida.dialogue", "res://assets/dialogues/Dia2_Pallaso_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Error_Petit.dialogue", "res://assets/dialogues/Dia2_Pallaso_Error_Gran.dialogue", "res://assets/dialogues/Dia2_Pallaso_Error_Petit.dialogue", "res://assets/dialogues/Dia2_Pallaso_Sortida.dialogue", "res://assets/dialogues/Dia3_Pallaso_Entrada.dialogue", "res://assets/dialogues/Dia3_Rata_Error_Gran.dialogue", "res://Dia3_Pallaso_Sortida.dialogue", "res://assets/dialogues/Dia·_Payaso_Entrada.dialogue", "res://Dia3_Rata_Error_Gran.dialogue", "res://Dia3_Rata_Error_Petit.dialogue", "res://Dia3_Pallaso_Error_Petit.dialogue", "res://Dia3_Pallaso_Error_Gran.dialogue")
 
 [physics]
 
