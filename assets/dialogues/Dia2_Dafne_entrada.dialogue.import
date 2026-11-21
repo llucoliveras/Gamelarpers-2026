@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bfjimlsu1m8o0"
+path="res://.godot/imported/Dia2_Dafne_entrada.dialogue-77fbaf0876f851734481263aca661614.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_Dafne_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia2_Dafne_entrada.dialogue-77fbaf0876f851734481263aca661614.tres"]
+
+[params]
+
+defaults=true

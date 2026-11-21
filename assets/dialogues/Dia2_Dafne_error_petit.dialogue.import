@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bo6putv0bahae"
+path="res://.godot/imported/Dia2_Dafne_error_petit.dialogue-c61d65b14256ffec42e81dd3d9cd61ac.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_Dafne_error_petit.dialogue"
+dest_files=["res://.godot/imported/Dia2_Dafne_error_petit.dialogue-c61d65b14256ffec42e81dd3d9cd61ac.tres"]
+
+[params]
+
+defaults=true

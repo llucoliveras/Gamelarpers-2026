@@ -1,4 +1,4 @@
-Amir: [speed=1.5]TU! Vull un xuixo.
+Amir: [speed=1.5][shake]TU![/shake] Vull un xuixo.
 Tu: Hola[wait=0.5].[wait=0.5].[wait=0.5].
 Tu: De quina mida vols el xuixo?
 Amir: Mida gran-mitjana[wait=0.5].[wait=0.5].[wait=0.5].
