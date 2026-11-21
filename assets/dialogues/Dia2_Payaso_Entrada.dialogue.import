@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dr75xuoybvljk"
+path="res://.godot/imported/Dia2_Payaso_Entrada.dialogue-6e3f8c02c8b152fca5d649b38680efd5.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_Payaso_Entrada.dialogue"
+dest_files=["res://.godot/imported/Dia2_Payaso_Entrada.dialogue-6e3f8c02c8b152fca5d649b38680efd5.tres"]
+
+[params]
+
+defaults=true
