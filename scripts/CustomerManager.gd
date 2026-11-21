@@ -10,10 +10,6 @@ var current_index: int = 0
 
 var current_customer: CustomerData = null
 
-func _ready() -> void:
-	# Opcional: Cargar clientes iniciales si no se asignan desde fuera
-	pass
-
 func get_next_customer() -> CustomerData:
 	print(current_index, customer_queue)
 	if current_index < customer_queue.size():
