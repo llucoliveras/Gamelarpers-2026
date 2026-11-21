@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dfw5lecjc4qf5"]
 
 [ext_resource type="Script" uid="uid://cfxbgi3fstxbu" path="res://càlcul_xuixos_.gd" id="1_nq5a4"]
-[ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/icon.svg" id="1_rl7f5"]
+[ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/images/icon.svg" id="3_kw1ds"]
 
 [node name="Ventana_evaluacion" type="Node2D" unique_id=2091454239]
 script = ExtResource("1_nq5a4")
@@ -19,33 +19,68 @@ alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=863025111]
 layout_mode = 2
-texture = ExtResource("1_rl7f5")
+texture = ExtResource("3_kw1ds")
 stretch_mode = 5
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=1578972832]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=1637211224]
 layout_mode = 2
-texture = ExtResource("1_rl7f5")
+alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=1578972832]
+layout_mode = 2
+texture = ExtResource("3_kw1ds")
 stretch_mode = 5
+
+[node name="contador" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=1594688678]
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1149186524]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -136.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = -68.0
+offset_right = 138.0
+offset_bottom = 68.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 alignment = 1
 
-[node name="ButtonLess" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1529008935]
-layout_mode = 2
-icon = ExtResource("1_rl7f5")
-
 [node name="ButtonPlus" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=2000231698]
 layout_mode = 2
-icon = ExtResource("1_rl7f5")
 
-[connection signal="pressed" from="CanvasLayer/HBoxContainer/ButtonLess" to="." method="_al_pulsar_boton"]
+[node name="ButtonLess" type="Button" parent="CanvasLayer/HBoxContainer" unique_id=1529008935]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer" unique_id=86492280]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -71.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="multiplicadorActual2" type="TextureButton" parent="CanvasLayer/HBoxContainer2" unique_id=1114082672]
+layout_mode = 2
+texture_normal = ExtResource("3_kw1ds")
+
+[node name="TextoLabel" type="Label" parent="CanvasLayer/HBoxContainer2/multiplicadorActual2" unique_id=507107536]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/ButtonPlus" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/ButtonLess" to="." method="_al_pulsar_boton"]
+[connection signal="theme_changed" from="CanvasLayer/HBoxContainer2/multiplicadorActual2" to="." method="_on_multiplicador_actual_2_theme_changed"]
