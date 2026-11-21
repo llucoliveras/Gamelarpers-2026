@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://13ajduxtgu55"]
+
+[ext_resource type="PackedScene" uid="uid://dfw5lecjc4qf5" path="res://CàlculXuixos_.tscn" id="1_8mcok"]
+
+[node name="Ventana_evaluacion" unique_id=2091454239 instance=ExtResource("1_8mcok")]

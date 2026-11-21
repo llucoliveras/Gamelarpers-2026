@@ -6,7 +6,7 @@ const SCENE_TRANSITION = preload("uid://5qh6pynhc5ju")
 func restart_level() -> void:
 	get_tree().reload_current_scene()
 
-func load_level(path: String) -> void:
+func load_level(path: String) -> Node:
 	print("Trying")
 	# 1. Safely load and check if the scene exists
 	var scene_resource = ResourceLoader.load(path)
@@ -24,5 +24,6 @@ func load_level(path: String) -> void:
 	
 	print(scene_resource)
 	# 3. Instantiate and add the new scene
-	get_tree().current_scene.add_child(scene_resource.instantiate())
-	print("end")
+	var new_scene: Node = scene_resource.instantiate()
+	get_tree().current_scene.add_child(new_scene)
+	return new_scene
