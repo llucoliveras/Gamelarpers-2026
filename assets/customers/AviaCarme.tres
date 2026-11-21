@@ -1,16 +1,20 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cb3ln805kbi7"]
 
-[ext_resource type="Resource" uid="uid://dglunesu7aubi" path="res://assets/dialogues/test.dialogue" id="1_pcaej"]
+[ext_resource type="Resource" uid="uid://do7rfrchmqqkr" path="res://assets/dialogues/test_entrada.dialogue" id="1_4k0ah"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_x8b2d"]
-[ext_resource type="Resource" uid="uid://nnrfows33rm0" path="res://assets/dialogues/example.dialogue" id="2_fdv87"]
+[ext_resource type="Resource" uid="uid://esfqy0wxhime" path="res://assets/dialogues/test_error_mes_gran.dialogue" id="2_d6emp"]
 [ext_resource type="Texture2D" uid="uid://cquemq4t2wxt1" path="res://assets/images/noia_generica_1.png" id="3_fdv87"]
+[ext_resource type="Resource" uid="uid://dj3wplob7g2g1" path="res://assets/dialogues/test_error_mes_petit.dialogue" id="3_m0rh6"]
+[ext_resource type="Resource" uid="uid://s3uhcs8lnpdt" path="res://assets/dialogues/test_sortida.dialogue" id="4_kh5lc"]
 
 [resource]
 script = ExtResource("1_x8b2d")
 customer_name = "Àvia Carme"
 portrait = ExtResource("3_fdv87")
 target_number = 20
-dialogue_entry = ExtResource("1_pcaej")
-dialogue_exit = ExtResource("2_fdv87")
+dialogue_entry = ExtResource("1_4k0ah")
+dialogue_error_lower = ExtResource("3_m0rh6")
+dialogue_error_higher = ExtResource("2_d6emp")
+dialogue_exit = ExtResource("4_kh5lc")
 stage_1 = true
 metadata/_custom_type_script = "uid://n5hp4ggtd0fw"

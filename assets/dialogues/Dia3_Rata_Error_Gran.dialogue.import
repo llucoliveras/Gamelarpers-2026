@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://oqxk316xs57d"
+path="res://.godot/imported/Dia3_Rata_Error_Gran.dialogue-8f3561d049c11465c9c3660fe7ca287f.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia3_Rata_Error_Gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Error_Gran.dialogue-8f3561d049c11465c9c3660fe7ca287f.tres"]
+
+[params]
+
+defaults=true
