@@ -2,8 +2,8 @@
 
 [ext_resource type="Resource" uid="uid://jm2hs18dv4pk" path="res://assets/dialogues/Dia3_Rata_Entrada.dialogue" id="1_hum2l"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_mky6g"]
-[ext_resource type="Resource" uid="uid://oqxk316xs57d" path="res://Dia3_Rata_Error_Gran.dialogue" id="2_kq30y"]
-[ext_resource type="Resource" uid="uid://deqhavhk7qa50" path="res://Dia3_Rata_Error_Petit.dialogue" id="3_thity"]
+[ext_resource type="Resource" uid="uid://oqxk316xs57d" path="res://assets/dialogues/Dia3_Rata_Error_Gran.dialogue" id="2_kq30y"]
+[ext_resource type="Resource" uid="uid://deqhavhk7qa50" path="res://assets/dialogues/Dia3_Rata_Error_Petit.dialogue" id="3_thity"]
 [ext_resource type="Resource" uid="uid://bco3lbhaymg52" path="res://assets/dialogues/Dia3_Rata_Sortida.dialogue" id="4_ihucb"]
 [ext_resource type="Texture2D" uid="uid://d38dskflxqtt3" path="res://assets/images/iio3xm4o1sn51.png" id="5_pat5c"]
 
