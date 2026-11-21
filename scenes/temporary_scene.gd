@@ -9,7 +9,7 @@ func setup(new_params: Dictionary) -> void:
 	params = new_params
 
 func _on_button_pressed() -> void:
-	var value = int(line_edit.text)
+	var value = float(line_edit.text)
 	params.player_guess = value
 	
 	scene_transition = get_tree().current_scene.find_child("SceneTransition")

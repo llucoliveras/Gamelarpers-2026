@@ -25,8 +25,10 @@ func fade_out() -> void:
 	
 	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
-func load_scene(scene_file_path: String, params: Dictionary = {}) -> void:
+func load_scene(new_scene_file_path: String, params: Dictionary = {}) -> void:
 	await fade_in()
-	var new_scene = CustomLevelManager.load_level(scene_file_path)
-	new_scene.setup(params)
+	var new_scene = CustomLevelManager.load_level(new_scene_file_path)
+	if new_scene.has_method("setup"):
+		new_scene.setup(params)
+	else: print("La escena ", new_scene, " no tiene la funcion setup.")
 	await fade_out()
