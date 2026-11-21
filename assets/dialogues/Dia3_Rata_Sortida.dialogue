@@ -1,0 +1,13 @@
+~ start
+Rata: Uf aquest xuixos hem tornen boig...
+~ inici_bucle
+Rata: Boig? jo vaig estar amb un boig una vegada.
+Rata: Estavem a una habitacio. 
+Rata: Una habitació de goma.
+Rata: Una habitació de goma amb un humà.
+Rata: El vam tornar boig...
+- Com que el vau tornar boig?
+	=> inici_bucle
+- ...
+Rata: jijijijiji...
+=> END
