@@ -28,6 +28,5 @@ func fade_out() -> void:
 func load_scene(scene_file_path: String, params: Dictionary = {}) -> void:
 	await fade_in()
 	var new_scene = CustomLevelManager.load_level(scene_file_path)
-	if params != {}:
-		new_scene.setup(params)
+	new_scene.setup(params)
 	await fade_out()
