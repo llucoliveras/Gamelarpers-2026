@@ -12,4 +12,5 @@ portrait = ExtResource("3_fdv87")
 target_number = 20
 dialogue_entry = ExtResource("1_pcaej")
 dialogue_exit = ExtResource("2_fdv87")
+fase_1 = true
 metadata/_custom_type_script = "uid://n5hp4ggtd0fw"

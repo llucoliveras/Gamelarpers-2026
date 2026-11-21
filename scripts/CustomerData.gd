@@ -11,3 +11,7 @@ extends Resource
 @export var dialogue_error_lower: Resource
 @export var dialogue_error_higher: Resource
 @export var dialogue_exit: Resource
+
+# Quines fases necesita el client
+@export var fase_1: bool
+@export var fase_2: bool
