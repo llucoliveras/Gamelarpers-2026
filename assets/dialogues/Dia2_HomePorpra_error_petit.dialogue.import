@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dkrdc3qwqdou3"
+path="res://.godot/imported/Dia2_HomePorpra_error_petit.dialogue-58a3ba95d63a646d38a8d72f49eee8a4.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_HomePorpra_error_petit.dialogue"
+dest_files=["res://.godot/imported/Dia2_HomePorpra_error_petit.dialogue-58a3ba95d63a646d38a8d72f49eee8a4.tres"]
+
+[params]
+
+defaults=true

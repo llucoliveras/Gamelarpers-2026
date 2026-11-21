@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cluy7x3tjbywn"
+path="res://.godot/imported/Dia3_AviaCarme_error_gran.dialogue-1cceea1d49d0b690bfa676e8945db63f.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia3_AviaCarme_error_gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_error_gran.dialogue-1cceea1d49d0b690bfa676e8945db63f.tres"]
+
+[params]
+
+defaults=true
