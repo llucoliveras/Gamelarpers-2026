@@ -139,41 +139,27 @@ icon = ExtResource("3_kw1ds")
 
 [node name="Buttons" type="HBoxContainer" parent="CanvasLayer" unique_id=761483534]
 offset_left = 357.0
-offset_top = 496.0
+offset_top = 510.0
 offset_right = 793.0
-offset_bottom = 624.0
+offset_bottom = 638.0
 size_flags_horizontal = 4
 size_flags_vertical = 8
+theme_override_constants/separation = 50
 alignment = 1
 
 [node name="ButtonMinus" type="Button" parent="CanvasLayer/Buttons" unique_id=1799573341]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(150, 0)
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(-1, 100)
 layout_mode = 2
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 80
 text = "-"
 
-[node name="ButtonMultiplier" type="TextureButton" parent="CanvasLayer/Buttons" unique_id=679998562]
-unique_name_in_owner = true
-layout_mode = 2
-texture_normal = ExtResource("3_kw1ds")
-
-[node name="ButtonMultiplierLabel" type="Label" parent="CanvasLayer/Buttons/ButtonMultiplier" unique_id=1865633058]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="ButtonPlus" type="Button" parent="CanvasLayer/Buttons" unique_id=480971269]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(150, 0)
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(-1, 100)
 layout_mode = 2
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 80

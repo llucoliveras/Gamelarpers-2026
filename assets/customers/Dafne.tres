@@ -5,11 +5,15 @@
 [ext_resource type="Resource" uid="uid://r3sg0y8c35ul" path="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_error_grande.dialogue" id="2_f1heh"]
 [ext_resource type="Resource" uid="uid://bo6putv0bahae" path="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_error_petit.dialogue" id="3_73wfs"]
 [ext_resource type="Resource" uid="uid://butaocno6r7p" path="res://Dia2_Dafne_Sortida.dialogue" id="4_2ob2v"]
+[ext_resource type="Texture2D" uid="uid://d1luffeabq04f" path="res://assets/images/customers/dona_jove.png" id="5_f1heh"]
+[ext_resource type="Texture2D" uid="uid://44j3se7ojyu4" path="res://assets/images/objectes/gos.png" id="7_73wfs"]
 
 [resource]
 script = ExtResource("1_luktb")
 customer_name = "Dafne"
-target_quantity = 10
+portrait = ExtResource("5_f1heh")
+target_quantity = 55
+target_image = ExtResource("7_73wfs")
 dialogue_entry = ExtResource("1_2abe5")
 dialogue_error_lower_2 = ExtResource("3_73wfs")
 dialogue_error_higher_2 = ExtResource("2_f1heh")

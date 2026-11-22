@@ -7,24 +7,17 @@
 [ext_resource type="Texture2D" uid="uid://dl6tsd7fw6u8k" path="res://assets/images/customers/protagonista.png" id="4_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://70tq5kjvea2b" path="res://assets/images/customers/rata.png" id="5_8ln24"]
 
-[sub_resource type="Gradient" id="Gradient_wu84c"]
+[sub_resource type="Gradient" id="Gradient_rtw2f"]
 interpolation_mode = 2
 offsets = PackedFloat32Array(0, 0.2580645, 0.60215056, 0.87455195, 1)
 colors = PackedColorArray(0.4509804, 0.42352942, 0.92941177, 1, 0.62352943, 0.62352943, 0.92941177, 1, 0.83137256, 0.75686276, 0.9254902, 1, 0.99607843, 0.9764706, 1, 1, 0.9490196, 0.8745098, 0.84313726, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ttxx8"]
-gradient = SubResource("Gradient_wu84c")
+gradient = SubResource("Gradient_rtw2f")
 fill_to = Vector2(0.52991456, 1)
 
 [node name="MainMenu" type="CanvasLayer" unique_id=917246701]
 script = ExtResource("1_06t4h")
-
-[node name="BackgroundColor" type="ColorRect" parent="." unique_id=2029728179]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1565326204]
 anchors_preset = 15

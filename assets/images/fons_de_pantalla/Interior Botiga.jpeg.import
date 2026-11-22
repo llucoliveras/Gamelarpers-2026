@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3fewqfi8h2jy"
-path="res://.godot/imported/istockphoto-2215008441-612x612.jpg-b8ebd82ef6813622d7665bff765b653a.ctex"
+uid="uid://bemh1u2b502n1"
+path="res://.godot/imported/Interior Botiga.jpeg-1f76f53def9951e551bcc0e13675b0f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/SUBSTITUIR AQUESTES IMATGES/istockphoto-2215008441-612x612.jpg"
-dest_files=["res://.godot/imported/istockphoto-2215008441-612x612.jpg-b8ebd82ef6813622d7665bff765b653a.ctex"]
+source_file="res://assets/images/fons_de_pantalla/Interior Botiga.jpeg"
+dest_files=["res://.godot/imported/Interior Botiga.jpeg-1f76f53def9951e551bcc0e13675b0f7.ctex"]
 
 [params]
 

@@ -4,7 +4,6 @@ const GENERIC_XUIXO_SIZE: int = 15
 
 # Variables de estado (mínimo 1 xuxo siempre)
 var quantitatXuixo = 1
-var multiplicadorActual = 1
 var params: Dictionary = {}
 
 # Límite visual de xuxos configurado a 6
@@ -13,11 +12,8 @@ const LIMITE_VISUAL = 6
 func _ready() -> void:
 	%ButtonPlus.pressed.connect(_al_pulsar_mas)
 	%ButtonMinus.pressed.connect(_al_pulsar_menos)
-	%ButtonMultiplier.pressed.connect(_al_pulsar_multiplicador)
 	%SaveButton.pressed.connect(_al_pulsar_guardar)
 	
-	%ButtonMultiplierLabel.text = "x" + str(multiplicadorActual)
-		
 	# Configuramos los xuxos del contenedor al arrancar por seguridad
 	preparar_contenedor_xuxos()
 	
@@ -45,24 +41,13 @@ func preparar_contenedor_xuxos() -> void:
 			hijo.custom_minimum_size = Vector2(64, 64)
 
 func _al_pulsar_mas() -> void: 
-	quantitatXuixo += multiplicadorActual
-	print("¡Botón (+) pulsado! Sumando ", multiplicadorActual, ". Xuxos totales: ", quantitatXuixo)
+	quantitatXuixo += 1
 	actualizar_fase_dos()
 
 func _al_pulsar_menos() -> void: 
 	# Blindaje: nunca baja de 1
-	quantitatXuixo = max(quantitatXuixo - multiplicadorActual, 1)	
-	print("¡Botón (-) pulsado! Restando ", multiplicadorActual, ". Xuxos totales: ", quantitatXuixo)
+	quantitatXuixo = max(quantitatXuixo - 1, 1)	
 	actualizar_fase_dos()
-
-func _al_pulsar_multiplicador() -> void:
-	multiplicadorActual *= 10
-	if multiplicadorActual >= 1000:
-		multiplicadorActual = 1
-	
-	print("¡Botón multiplicador presionado! Su valor actual es: x", multiplicadorActual)
-	
-	%ButtonMultiplierLabel.text = "x" + str(multiplicadorActual)
 
 func _al_pulsar_guardar() -> void:
 	var scene_transition = get_tree().current_scene.find_child("SceneTransition")

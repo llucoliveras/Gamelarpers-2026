@@ -2,27 +2,33 @@ extends Node
 
 const ERROR_MARGIN: float = 0.10
 
-const AVIA = preload("uid://cdl3fhlhrydu3")
-const AVIA_DIA_3 = preload("uid://cwt42aggshphm")
 const INFORMATICO = preload("uid://b3fbspti12l4s")
-const INFORMATICO_DIA_3 = preload("uid://dk4psvbaubo2d")
-const PALLASSO_DIA_2 = preload("uid://b5rgh80sdtahf")
-const PALLASSO_DIA_3 = preload("uid://c4eqprumavpr")
+const AVIA = preload("uid://cdl3fhlhrydu3")
 const JOHN_QUOK = preload("uid://beau74kk8d4l2")
-const JOHN_QUOKDIA_3 = preload("uid://cp7bil4g5kaop")
-const RATA = preload("uid://b32ycbbrjyxy3")
+const DAFNE = preload("uid://c5myabb1222v6")
+const HOMBRE_PURPURA = preload("uid://1iemhcbafh8q")
+const PALLASSO_DIA_2 = preload("uid://b5rgh80sdtahf")
 const PEPE = preload("uid://caavsh2ib217x")
+const RATA = preload("uid://b32ycbbrjyxy3")
+const PALLASSO_DIA_3 = preload("uid://c4eqprumavpr")
+const AVIA_DIA_3 = preload("uid://cwt42aggshphm")
+const JOHN_QUOKDIA_3 = preload("uid://cp7bil4g5kaop")
+const INFORMATICO_DIA_3 = preload("uid://dk4psvbaubo2d")
 
 # informatico/amir, avia carme, jhon quok, dafne, pallasso, pepe, informatico/amir dia 3, jhon quok dia 3, pallasso dia 3, rata
 var customer_queue: Array[CustomerData] = [
 	INFORMATICO,
 	AVIA,
 	JOHN_QUOK,
+	DAFNE,
+	HOMBRE_PURPURA,
 	PALLASSO_DIA_2,
-	INFORMATICO_DIA_3,
-	JOHN_QUOKDIA_3,
+	PEPE,
+	RATA,
 	PALLASSO_DIA_3,
-	RATA
+	AVIA_DIA_3,
+	JOHN_QUOKDIA_3,
+	INFORMATICO_DIA_3
 ]
 var current_index: int = 0
 
@@ -38,7 +44,7 @@ func get_next_customer() -> CustomerData:
 		current_customer = null
 		return null # Fin de la cola / día completado
 
-func validate_player_number(number: int = -1, target: int = -1) -> int:
+func validate_player_number(number: float = -1, target: float = -1) -> int:
 	print(number, ", ", target)
 	if not current_customer:
 		return -999
