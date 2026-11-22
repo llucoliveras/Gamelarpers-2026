@@ -9,8 +9,10 @@ extends Resource
 
 # Rutas o títulos para el Dialogue Manager
 @export var dialogue_entry: Resource 
-@export var dialogue_error_lower: Resource
-@export var dialogue_error_higher: Resource
+@export var dialogue_error_lower_1: Resource
+@export var dialogue_error_higher_1: Resource
+@export var dialogue_error_lower_2: Resource
+@export var dialogue_error_higher_2: Resource
 @export var dialogue_exit: Resource
 
 # Quines fases necesita el client
