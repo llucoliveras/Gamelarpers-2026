@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://1iemhcbafh8q"]
+
+[ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_i010y"]
+[ext_resource type="Resource" uid="uid://e07sbggf4qyy" path="res://assets/dialogues/Dia2_HomePorpra_entrada.dialogue" id="1_yqee3"]
+[ext_resource type="Resource" uid="uid://cnfo8iu6jabvy" path="res://assets/dialogues/Dia2_HomePorpra_error_gran.dialogue" id="2_wtix1"]
+[ext_resource type="Resource" uid="uid://dkrdc3qwqdou3" path="res://assets/dialogues/Dia2_HomePorpra_error_petit.dialogue" id="3_y5g6c"]
+[ext_resource type="Resource" uid="uid://8l30npt8i3eu" path="res://assets/dialogues/Dia2_HomePorpra_sortida.dialogue" id="4_jnysm"]
+[ext_resource type="Texture2D" uid="uid://cjy5104m26m71" path="res://assets/customers/home_lila.png" id="5_3bkaa"]
+[ext_resource type="Texture2D" uid="uid://satwtpfel5t0" path="res://assets/objectes/nen.png" id="7_l6j3v"]
+
+[resource]
+script = ExtResource("1_i010y")
+customer_name = "Hombre Purpura"
+portrait = ExtResource("5_3bkaa")
+target_quantity = 7
+target_image = ExtResource("7_l6j3v")
+dialogue_entry = ExtResource("1_yqee3")
+dialogue_error_lower_2 = ExtResource("3_y5g6c")
+dialogue_error_higher_2 = ExtResource("2_wtix1")
+dialogue_exit = ExtResource("4_jnysm")
+stage_2 = true
+metadata/_custom_type_script = "uid://n5hp4ggtd0fw"
