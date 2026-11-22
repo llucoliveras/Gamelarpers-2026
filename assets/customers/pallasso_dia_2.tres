@@ -6,12 +6,14 @@
 [ext_resource type="Resource" uid="uid://72ee23gjng1f" path="res://assets/dialogues/Dia2_Pallaso_Error_Petit.dialogue" id="3_uj78u"]
 [ext_resource type="Resource" uid="uid://b5b86kyfanwr0" path="res://assets/dialogues/Dia2_Pallaso_Sortida.dialogue" id="4_fbw5x"]
 [ext_resource type="Texture2D" uid="uid://bsu8a1knw5u82" path="res://assets/customers/pallaso_trist.png" id="5_app60"]
+[ext_resource type="Texture2D" uid="uid://b5uh1bagab4me" path="res://assets/objectes/globo.png" id="7_yri0q"]
 
 [resource]
 script = ExtResource("1_3e5vg")
 customer_name = "Pallaso Trist"
 portrait = ExtResource("5_app60")
 target_quantity = 150
+target_image = ExtResource("7_yri0q")
 dialogue_entry = ExtResource("1_feqy8")
 dialogue_error_lower = ExtResource("3_uj78u")
 dialogue_error_higher = ExtResource("2_yri0q")

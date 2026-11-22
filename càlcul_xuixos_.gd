@@ -22,17 +22,12 @@ const LIMITE_VISUAL = 6
 @onready var contadorBollitos: Label = %contador
 
 func _ready() -> void:
-	if botonPlus:
-		botonPlus.pressed.connect(_al_pulsar_mas)
-	if botonLess:
-		botonLess.pressed.connect(_al_pulsar_menos)
-	if botonMultiplicador:
-		botonMultiplicador.pressed.connect(_al_pulsar_multiplicador)
-	if botonGuardar:
-		botonGuardar.pressed.connect(_al_pulsar_guardar)
+	botonPlus.pressed.connect(_al_pulsar_mas)
+	botonLess.pressed.connect(_al_pulsar_menos)
+	botonMultiplicador.pressed.connect(_al_pulsar_multiplicador)
+	botonGuardar.pressed.connect(_al_pulsar_guardar)
 	
-	if textoMultiplicador:
-		textoMultiplicador.text = "x" + str(multiplicadorActual)
+	textoMultiplicador.text = "x" + str(multiplicadorActual)
 		
 	# Configuramos los xuxos del contenedor al arrancar por seguridad
 	preparar_contenedor_xuxos()
@@ -41,10 +36,7 @@ func _ready() -> void:
 	actualizar_fase_dos()
 
 # Función para asegurar que todos los huecos tienen textura y tamaño controlado
-func preparar_contenedor_xuxos() -> void:
-	if not contenedorXuixo:
-		return
-		
+func preparar_contenedor_xuxos() -> void:		
 	var hijos = contenedorXuixo.get_children()
 	if hijos.size() == 0:
 		return
@@ -64,34 +56,23 @@ func preparar_contenedor_xuxos() -> void:
 			hijo.custom_minimum_size = Vector2(64, 64)
 
 func _al_pulsar_mas() -> void: 
-	var incremento = 1 * multiplicadorActual
-	quantitatXuixo += incremento
-	print("¡Botón (+) pulsado! Sumando ", incremento, ". Xuxos totales: ", quantitatXuixo)
+	quantitatXuixo += multiplicadorActual
+	print("¡Botón (+) pulsado! Sumando ", multiplicadorActual, ". Xuxos totales: ", quantitatXuixo)
 	actualizar_fase_dos()
 
 func _al_pulsar_menos() -> void: 
-	var decremento = 1 * multiplicadorActual
-	# Blindaje: nunca baja de 1
-	if quantitatXuixo - decremento >= 1:
-		quantitatXuixo -= decremento
-	else:
-		quantitatXuixo = 1 
-		
-	print("¡Botón (-) pulsado! Restando ", decremento, ". Xuxos totales: ", quantitatXuixo)
+	quantitatXuixo = max(quantitatXuixo - multiplicadorActual, 1)
+	print("¡Botón (-) pulsado! Restando ", multiplicadorActual, ". Xuxos totales: ", quantitatXuixo)
 	actualizar_fase_dos()
 
 func _al_pulsar_multiplicador() -> void:
-	if multiplicadorActual == 1:
-		multiplicadorActual = 10
-	elif multiplicadorActual == 10:
-		multiplicadorActual = 100
-	else:
+	multiplicadorActual *= 10
+	if multiplicadorActual >= 1000:
 		multiplicadorActual = 1
 	
 	print("¡Botón multiplicador presionado! Su valor actual es: x", multiplicadorActual)
 	
-	if textoMultiplicador:
-		textoMultiplicador.text = "x" + str(multiplicadorActual)
+	textoMultiplicador.text = "x" + str(multiplicadorActual)
 
 func _al_pulsar_guardar() -> void:
 	print("--- GUARDANDO Y SALIENDO ---")
@@ -103,24 +84,13 @@ func _al_pulsar_guardar() -> void:
 	# Aquí irá tu lógica de fundido (fade-in)
 
 func actualizar_fase_dos() -> void:
-	if quantitatXuixo < 1:
-		quantitatXuixo = 1
+	var hijos = contenedorXuixo.get_children()
+	for i in range(hijos.size()):
+		# Mostramos estrictamente desde 0 hasta la cantidad actual (tope 6)
+		hijos[i].visible = i < quantitatXuixo and i < LIMITE_VISUAL
 
-	if contenedorXuixo:
-		var hijos = contenedorXuixo.get_children()
-		for i in range(hijos.size()):
-			# Mostramos estrictamente desde 0 hasta la cantidad actual (tope 6)
-			if i < quantitatXuixo and i < LIMITE_VISUAL:
-				hijos[i].visible = true
-			else:
-				hijos[i].visible = false
-
-	if contadorBollitos:
-		contadorBollitos.text = "x " + str(quantitatXuixo)
-		if quantitatXuixo > LIMITE_VISUAL:
-			contadorBollitos.visible = true
-		else:
-			contadorBollitos.visible = false
+	contadorBollitos.text = "x " + str(quantitatXuixo)
+	contadorBollitos.visible = quantitatXuixo > LIMITE_VISUAL
 
 func setup(parametros) -> void: 
 	if parametros and parametros.customer: 
@@ -129,8 +99,3 @@ func setup(parametros) -> void:
 			%TextureRect.texture = customer.target_image
 			
 	actualizar_fase_dos()
-
-
-
-func _on_button_pressed() -> void:
-	pass # Replace with function body.
