@@ -50,8 +50,7 @@ func _on_h_slider_value_changed(value: float) -> void:
 		max_container_width = aspect_ratio_container.size.x
 		if max_container_width <= 0: return
 	
-	# Convert the slider value (assuming 0 to 100) into a 0.0 to 1.0 percentage
-	var percentage = value / 100.0
+	var percentage = value / h_slider.max_value
 	
 	# Adjust the image's minimum horizontal width based on the percentage of the container
 	object_image.custom_minimum_size.x = max_container_width * percentage

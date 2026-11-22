@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://bedchet5mfaex"]
+
+[ext_resource type="Script" uid="uid://c64a673jq1jg3" path="res://end_scene.gd" id="1_chdtv"]
+[ext_resource type="Material" uid="uid://dtmspo08nsp88" path="res://assets/extras/jiggle_shader_material.tres" id="2_mc17n"]
+[ext_resource type="Material" uid="uid://djxnqlru5pcdp" path="res://assets/extras/jiggle_shader_material_x0.5.tres" id="3_6ajh6"]
+
+[sub_resource type="Gradient" id="Gradient_wu84c"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.2580645, 0.60215056, 0.87455195, 1)
+colors = PackedColorArray(0.4509804, 0.42352942, 0.92941177, 1, 0.62352943, 0.62352943, 0.92941177, 1, 0.83137256, 0.75686276, 0.9254902, 1, 0.99607843, 0.9764706, 1, 1, 0.9490196, 0.8745098, 0.84313726, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5p7bg"]
+gradient = SubResource("Gradient_wu84c")
+fill_to = Vector2(0.52991456, 1)
+
+[node name="EndScene" type="CanvasLayer" unique_id=636370860]
+script = ExtResource("1_chdtv")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=19678344]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_5p7bg")
+
+[node name="GameTitle" type="Label" parent="." unique_id=329847183]
+material = ExtResource("2_mc17n")
+offset_left = 43.999992
+offset_top = 55.0
+offset_right = 1716.0
+offset_bottom = 526.0
+scale = Vector2(0.6423015, 0.6423015)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 193
+text = "Gracies per jugar
+al nostre joc <3"
+horizontal_alignment = 1
+
+[node name="ExtrudeText" type="Label" parent="GameTitle" unique_id=1974554347]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -12.5
+offset_right = 1083.0
+offset_bottom = 222.5
+theme_override_font_sizes/font_size = 193
+text = "Gracies per jugar
+al nostre joc <3"
+horizontal_alignment = 1
+
+[node name="StudioName" type="Label" parent="." unique_id=144876094]
+material = ExtResource("3_6ajh6")
+offset_left = 81.0
+offset_top = 381.0
+offset_right = 1753.0
+offset_bottom = 852.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "GameLarpers                  Game Jam Girotronica 2026"
+
+[node name="ExtrudeText" type="Label" parent="StudioName" unique_id=180380354]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 1674.0
+offset_bottom = 468.0
+theme_override_font_sizes/font_size = 40
+text = "GameLarpers                  Game Jam Girotronica 2026"
+
+[node name="PeopleCredits" type="Label" parent="." unique_id=231851696]
+material = ExtResource("3_6ajh6")
+offset_left = 74.0
+offset_top = 473.0
+offset_right = 1087.0
+offset_bottom = 944.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Emilia Bagues · Abril Barrera · Eric Barrera · Monica Escolies · Aryan · Aleix · Lluc Oliveras"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="PeopleCredits" type="Label" parent="PeopleCredits" unique_id=728851322]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -3.0
+offset_right = 1015.0
+offset_bottom = 468.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "Emilia Bagues · Abril Barrera · Eric Barrera · Monica Escolies · Aryan · Aleix · Lluc Oliveras"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Timer" type="Timer" parent="." unique_id=97915482]
+unique_name_in_owner = true
+wait_time = 30.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

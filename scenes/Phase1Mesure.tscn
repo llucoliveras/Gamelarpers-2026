@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxlf3hwqoq45w"]
 
 [ext_resource type="Script" uid="uid://ctwoo84na1f2k" path="res://scripts/phase_1_mesure.gd" id="1_n0d5s"]
-[ext_resource type="Texture2D" uid="uid://dhit5nvpevvcy" path="res://assets/images/SUBSTITUIR AQUESTES IMATGES/baker_table_top_view.jpg" id="2_4tpf0"]
+[ext_resource type="Texture2D" uid="uid://dhluk25dfemnq" path="res://assets/images/fons_de_pantalla/fonsFase2.jpeg" id="2_n0d5s"]
 [ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="3_8cg0o"]
 [ext_resource type="Script" uid="uid://b8kthlws6qnsp" path="res://scripts/mesure_line.gd" id="4_4tpf0"]
 
@@ -14,13 +14,14 @@ script = ExtResource("1_n0d5s")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -69.0
-offset_right = -611.0
-offset_bottom = -348.0
+offset_left = -550.0
+offset_top = -175.0
+offset_right = -550.0
+offset_bottom = -173.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.13, 2.13)
-texture = ExtResource("2_4tpf0")
+scale = Vector2(1.9867043, 1.9867043)
+texture = ExtResource("2_n0d5s")
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1382017833]
 anchors_preset = 15
@@ -66,6 +67,7 @@ color = Color(0, 0, 0, 1)
 script = ExtResource("4_4tpf0")
 start_point = Vector2(25, 0)
 end_point = Vector2(925, 0)
+major_step = 5.0
 
 [node name="Line2D" type="Line2D" parent="CanvasLayer/CenterContainer/VBoxContainer/Ruler/Node2D" unique_id=1740822280]
 width = 4.0
@@ -82,6 +84,7 @@ theme_override_constants/margin_right = 25
 [node name="HSlider" type="HSlider" parent="CanvasLayer/CenterContainer/VBoxContainer/MarginContainer2" unique_id=966409600]
 unique_name_in_owner = true
 layout_mode = 2
+max_value = 50.0
 step = 0.1
 
 [node name="SaveButton" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=8240273]

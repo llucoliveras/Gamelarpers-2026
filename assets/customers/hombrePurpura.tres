@@ -12,7 +12,7 @@
 script = ExtResource("1_i010y")
 customer_name = "Hombre Purpura"
 portrait = ExtResource("5_3bkaa")
-target_quantity = 7
+target_quantity = 120
 target_image = ExtResource("7_l6j3v")
 dialogue_entry = ExtResource("1_yqee3")
 dialogue_error_lower_2 = ExtResource("3_y5g6c")

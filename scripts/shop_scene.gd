@@ -1,5 +1,7 @@
 extends Node2D
 
+const END_SCENE = preload("uid://bedchet5mfaex")
+
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var customer_node: Node2D = $Customer
 
@@ -61,4 +63,4 @@ func _load_stage():
 func _end_game():
 	scene_transition = get_tree().current_scene.find_child("SceneTransition")
 	if not scene_transition: return
-	scene_transition.load_scene("res://scenes/main_menu.tscn")
+	scene_transition.load_scene(END_SCENE.resource_path)

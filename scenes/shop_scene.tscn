@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b08sebeqhg0pb" path="res://scripts/shop_scene.gd" id="1_p7evi"]
 [ext_resource type="PackedScene" uid="uid://je1xyhj483bh" path="res://scenes/customer.tscn" id="2_hovpq"]
-[ext_resource type="Texture2D" uid="uid://c3fewqfi8h2jy" path="res://assets/images/SUBSTITUIR AQUESTES IMATGES/istockphoto-2215008441-612x612.jpg" id="2_ykrk4"]
+[ext_resource type="Texture2D" uid="uid://bemh1u2b502n1" path="res://assets/images/fons_de_pantalla/Interior Botiga.jpeg" id="2_ykrk4"]
 [ext_resource type="PackedScene" uid="uid://do7obudvsjjyk" path="res://assets/dialogues/balloon.tscn" id="3_hovpq"]
 
 [sub_resource type="Animation" id="Animation_tlo24"]
@@ -128,9 +128,9 @@ _data = {
 [node name="ShopScene" type="Node2D" unique_id=1255581658]
 script = ExtResource("1_p7evi")
 
-[node name="BackgroundImage" type="Sprite2D" parent="." unique_id=698194171]
-position = Vector2(574, 320)
-scale = Vector2(2, 2)
+[node name="BackgroundImage" type="TextureRect" parent="." unique_id=2028789631]
+offset_right = 1150.0
+offset_bottom = 650.0
 texture = ExtResource("2_ykrk4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=143911759]

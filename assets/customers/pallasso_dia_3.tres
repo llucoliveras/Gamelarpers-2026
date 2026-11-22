@@ -14,8 +14,8 @@
 script = ExtResource("1_ld5s0")
 customer_name = "Pallasso Content"
 portrait = ExtResource("5_y1wvt")
-target_mesure = 3
-target_quantity = 225
+target_mesure = 30
+target_quantity = 450
 target_image = ExtResource("9_uv2vb")
 dialogue_entry = ExtResource("1_dr57y")
 dialogue_error_lower_1 = ExtResource("4_y1wvt")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhit5nvpevvcy"
-path="res://.godot/imported/baker_table_top_view.jpg-e941ac1e1e751c771f006da4ee20b990.ctex"
+uid="uid://bemh1u2b502n1"
+path="res://.godot/imported/Interior Botiga.jpeg-1f76f53def9951e551bcc0e13675b0f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/SUBSTITUIR AQUESTES IMATGES/baker_table_top_view.jpg"
-dest_files=["res://.godot/imported/baker_table_top_view.jpg-e941ac1e1e751c771f006da4ee20b990.ctex"]
+source_file="res://assets/images/fons_de_pantalla/Interior Botiga.jpeg"
+dest_files=["res://.godot/imported/Interior Botiga.jpeg-1f76f53def9951e551bcc0e13675b0f7.ctex"]
 
 [params]
 
