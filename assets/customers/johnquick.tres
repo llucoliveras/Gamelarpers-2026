@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://caavsh2ib217x"]
+
+[ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_lbpm0"]
+[ext_resource type="Resource" uid="uid://b08whpihhq1c4" path="res://assets/dialogues/Dia2_Pepe_entrada.dialogue" id="1_xvs1v"]
+[ext_resource type="Resource" uid="uid://b18r75ojdkadh" path="res://assets/dialogues/Dia2_Pepe_error_petit.dialogue" id="2_11rph"]
+[ext_resource type="Resource" uid="uid://iu1fmo7xlwit" path="res://assets/dialogues/Dia2_Pepe_sortida.dialogue" id="3_b2wb2"]
+[ext_resource type="Texture2D" uid="uid://dl6tsd7fw6u8k" path="res://assets/customers/protagonista.png" id="4_2ikr2"]
+[ext_resource type="Texture2D" uid="uid://bmd357ofs1ljw" path="res://assets/objectes/pizza.png" id="6_sxt7r"]
+
+[resource]
+script = ExtResource("1_lbpm0")
+customer_name = "Pepe"
+portrait = ExtResource("4_2ikr2")
+target_quantity = 15
+target_image = ExtResource("6_sxt7r")
+dialogue_entry = ExtResource("1_xvs1v")
+dialogue_error_lower_2 = ExtResource("2_11rph")
+dialogue_error_higher_2 = ExtResource("2_11rph")
+dialogue_exit = ExtResource("3_b2wb2")
+stage_2 = true
+metadata/_custom_type_script = "uid://n5hp4ggtd0fw"

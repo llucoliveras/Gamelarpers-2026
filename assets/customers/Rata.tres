@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://b32ycbbrjyxy3"]
+
+[ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_dpibj"]
+[ext_resource type="Resource" uid="uid://jm2hs18dv4pk" path="res://assets/dialogues/Dia3_Rata_Entrada.dialogue" id="1_llfn5"]
+[ext_resource type="Resource" uid="uid://20q8psniqmp7" path="res://assets/dialogues/Dia3_Rata_Error_Xuixo_Gran.dialogue" id="2_xv4dk"]
+[ext_resource type="Resource" uid="uid://oqxk316xs57d" path="res://assets/dialogues/Dia3_Rata_Error_Gran.dialogue" id="3_2b6gy"]
+[ext_resource type="Resource" uid="uid://bmy4a0sqcaisn" path="res://assets/dialogues/Dia3_Rata_Error_Xuixo_Petit.dialogue" id="4_t3y3f"]
+[ext_resource type="Resource" uid="uid://deqhavhk7qa50" path="res://assets/dialogues/Dia3_Rata_Error_Petit.dialogue" id="5_lmyf3"]
+[ext_resource type="Resource" uid="uid://bco3lbhaymg52" path="res://assets/dialogues/Dia3_Rata_Sortida.dialogue" id="6_wk4ua"]
+[ext_resource type="Texture2D" uid="uid://70tq5kjvea2b" path="res://assets/customers/rata.png" id="7_4mb3u"]
+[ext_resource type="Texture2D" uid="uid://bo35p6xmf4y8l" path="res://assets/objectes/vaca.png" id="9_wwuxg"]
+
+[resource]
+script = ExtResource("1_dpibj")
+customer_name = "Rata"
+portrait = ExtResource("7_4mb3u")
+target_mesure = 15
+target_quantity = 20
+target_image = ExtResource("9_wwuxg")
+dialogue_entry = ExtResource("1_llfn5")
+dialogue_error_lower_1 = ExtResource("4_t3y3f")
+dialogue_error_higher_1 = ExtResource("2_xv4dk")
+dialogue_error_lower_2 = ExtResource("5_lmyf3")
+dialogue_error_higher_2 = ExtResource("3_2b6gy")
+dialogue_exit = ExtResource("6_wk4ua")
+stage_1 = true
+stage_2 = true
+metadata/_custom_type_script = "uid://n5hp4ggtd0fw"
