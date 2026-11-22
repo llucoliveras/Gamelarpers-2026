@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://vybnqtlwko5"
+path="res://.godot/imported/niggertry.dialogue-d6ddf6d74c4817ba25cfa3f4af5f3a18.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/niggertry.dialogue"
+dest_files=["res://.godot/imported/niggertry.dialogue-d6ddf6d74c4817ba25cfa3f4af5f3a18.tres"]
+
+[params]
+
+defaults=true
