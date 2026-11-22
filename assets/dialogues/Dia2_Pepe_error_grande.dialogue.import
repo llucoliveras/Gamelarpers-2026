@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dqb44xgtrf2am"
+path="res://.godot/imported/Dia2_Pepe_error_grande.dialogue-93d510961344be0d3742d0dc7ce63b3b.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_Pepe_error_grande.dialogue"
+dest_files=["res://.godot/imported/Dia2_Pepe_error_grande.dialogue-93d510961344be0d3742d0dc7ce63b3b.tres"]
+
+[params]
+
+defaults=true

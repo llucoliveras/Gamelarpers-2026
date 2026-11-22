@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bsbhcx803owpn"
+path="res://.godot/imported/Dia3_Informatic_Error_Petit.dialogue-abcf6a323ab8d0f243b88818bc20e4b6.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia3_Informatic_Error_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Informatic_Error_Petit.dialogue-abcf6a323ab8d0f243b88818bc20e4b6.tres"]
+
+[params]
+
+defaults=true

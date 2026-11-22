@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://8l30npt8i3eu"
+path="res://.godot/imported/Dia2_HomePorpra_sortida.dialogue-bce14d7a1b4015e9a3e2d10fedc69df3.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia2_HomePorpra_sortida.dialogue"
+dest_files=["res://.godot/imported/Dia2_HomePorpra_sortida.dialogue-bce14d7a1b4015e9a3e2d10fedc69df3.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dluoyw5m5uss0"
+path="res://.godot/imported/Dia1_JohnQuok_error_petit.dialogue-96097d278274717fb1d8a2aa3bcc0378.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia1_JohnQuok_error_petit.dialogue"
+dest_files=["res://.godot/imported/Dia1_JohnQuok_error_petit.dialogue-96097d278274717fb1d8a2aa3bcc0378.tres"]
+
+[params]
+
+defaults=true
