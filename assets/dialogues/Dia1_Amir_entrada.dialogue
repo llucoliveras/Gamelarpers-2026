@@ -1,3 +1,4 @@
+~ start
 Amir: [speed=1.5][shake]TU![/shake] Vull un xuixo.
 Tu: Hola[wait=0.5].[wait=0.5].[wait=0.5].
 Tu: De quina mida vols el xuixo?
@@ -7,4 +8,4 @@ Amir: Quant de temps trigarà?
 Tu: Més o menys—
 Amir: [speed=2] PARLA!
 Tu: No ho sé. Ara el preparo [shake]*sniff*[/shake]
-
+=> END
