@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cwt42aggshphm"]
+
+[ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_nodsq"]
+[ext_resource type="Resource" uid="uid://drm2r3tpooue3" path="res://assets/dialogues/Dia3_AviaCarme_entrada.dialogue" id="1_ruhhx"]
+[ext_resource type="Resource" uid="uid://cluy7x3tjbywn" path="res://assets/dialogues/Dia3_AviaCarme_error_mida_gran.dialogue" id="2_yrail"]
+[ext_resource type="Resource" uid="uid://bkch00y6dwqno" path="res://assets/dialogues/Dia3_AviaCarme_error_numero_gran.dialogue" id="3_kt05j"]
+[ext_resource type="Resource" uid="uid://demyamwh5k31a" path="res://assets/dialogues/Dia3_AviaCarme_error_mida_petit.dialogue" id="4_436e1"]
+[ext_resource type="Resource" uid="uid://dcmkwwugfi726" path="res://assets/dialogues/Dia3_AviaCarme_error_numero_petit.dialogue" id="5_xd1f6"]
+[ext_resource type="Resource" uid="uid://d010c8qdotieo" path="res://assets/dialogues/Dia3_AviaCarme_sortida.dialogue" id="6_3mpn6"]
+[ext_resource type="Texture2D" uid="uid://ceysl2snv1tr7" path="res://assets/images/grandma-happy-illustration-free-png.webp" id="7_msroc"]
+[ext_resource type="Texture2D" uid="uid://dycy1i21wmn4r" path="res://assets/objectes/tanc.png" id="9_8dog6"]
+
+[resource]
+script = ExtResource("1_nodsq")
+customer_name = "AviaDia3"
+portrait = ExtResource("7_msroc")
+target_quantity = 70
+target_image = ExtResource("9_8dog6")
+dialogue_entry = ExtResource("1_ruhhx")
+dialogue_error_lower_1 = ExtResource("4_436e1")
+dialogue_error_higher_1 = ExtResource("2_yrail")
+dialogue_error_lower_2 = ExtResource("5_xd1f6")
+dialogue_error_higher_2 = ExtResource("3_kt05j")
+dialogue_exit = ExtResource("6_3mpn6")
+stage_1 = true
+stage_2 = true
+metadata/_custom_type_script = "uid://n5hp4ggtd0fw"

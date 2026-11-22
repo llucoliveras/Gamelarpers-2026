@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://b3fbspti12l4s"]
+
+[ext_resource type="Resource" uid="uid://v6sb722ymr38" path="res://assets/dialogues/Dia1_Amir_entrada.dialogue" id="1_5xm0f"]
+[ext_resource type="Resource" uid="uid://b62op4cmlnpfl" path="res://assets/dialogues/Dia1_Amir_error_grande.dialogue" id="2_i15ju"]
+[ext_resource type="Resource" uid="uid://cbv3fioa2twmd" path="res://assets/dialogues/Dia1_Amir_error_petit.dialogue" id="3_m3km5"]
+[ext_resource type="Resource" uid="uid://brsevm73piwmi" path="res://assets/dialogues/Dia1_Amir_sortida.dialogue" id="4_lymfd"]
+[ext_resource type="Texture2D" uid="uid://hyvv0upr7lrd" path="res://assets/customers/programador.png" id="5_wfy3v"]
+[ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="6_4dfvi"]
+
+[resource]
+script = ExtResource("6_4dfvi")
+portrait = ExtResource("5_wfy3v")
+target_mesure = 47
+target_quantity = 1
+dialogue_entry = ExtResource("1_5xm0f")
+dialogue_error_lower_1 = ExtResource("3_m3km5")
+dialogue_error_higher_1 = ExtResource("2_i15ju")
+dialogue_exit = ExtResource("4_lymfd")
+stage_1 = true
+metadata/_custom_type_script = "uid://n5hp4ggtd0fw"
