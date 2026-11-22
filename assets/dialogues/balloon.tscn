@@ -75,6 +75,9 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
+[sub_resource type="Theme" id="Theme_feqy8"]
+default_font_size = 32
+
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -131,7 +134,7 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -320.0
+offset_top = -275.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -149,6 +152,7 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1890134056]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = SubResource("Theme_feqy8")
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1567782692]
 unique_name_in_owner = true

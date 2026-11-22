@@ -21,11 +21,19 @@ func get_next_customer() -> CustomerData:
 		current_customer = null
 		return null # Fin de la cola / día completado
 
-func validate_player_number(number: int) -> int:
+func validate_player_number(number: int = -1, target: int = -1) -> int:
+	print(number, ", ", target)
 	if not current_customer:
-		return false
-	var target: int = current_customer.target_number
-	print(number, ", ", (target * (1-ERROR_MARGIN)), ", ", (target * (1+ERROR_MARGIN)))
+		return -999
+		
+	if number < (target * (1-ERROR_MARGIN)):
+		return -1
+	elif number > (target * (1+ERROR_MARGIN)):
+		return 1
+	else: return 0
+	
+
+func _is_number_in_target_error_margin(number: float, target: float) -> bool:
 	if number < (target * (1-ERROR_MARGIN)):
 		return -1
 	elif number > (target * (1+ERROR_MARGIN)):

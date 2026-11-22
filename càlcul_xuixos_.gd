@@ -1,33 +1,22 @@
 extends Node2D
 
+const GENERIC_XUIXO_SIZE: int = 30
+
 # Variables de estado (mínimo 1 xuxo siempre)
 var quantitatXuixo = 1
-var customer = null
 var multiplicadorActual = 1
+var params: Dictionary = {}
 
 # Límite visual de xuxos configurado a 6
 const LIMITE_VISUAL = 6
 
-# Referencias a los botones usando nombres únicos (%)
-@onready var botonPlus: Button = %ButtonPlus
-@onready var botonLess: Button = %ButtonLess
-@onready var botonMultiplicador: TextureButton = %multiplicadorActual2
-@onready var textoMultiplicador: Label = %TextoLabel
-
-# Botón de Guardar
-@onready var botonGuardar: Button = %Guardar
-
-# Referencias a la estructura visual de la Fase 2
-@onready var contenedorXuixo: HBoxContainer = %contenedor_xuixo
-@onready var contadorBollitos: Label = %contador
-
 func _ready() -> void:
-	botonPlus.pressed.connect(_al_pulsar_mas)
-	botonLess.pressed.connect(_al_pulsar_menos)
-	botonMultiplicador.pressed.connect(_al_pulsar_multiplicador)
-	botonGuardar.pressed.connect(_al_pulsar_guardar)
+	%ButtonPlus.pressed.connect(_al_pulsar_mas)
+	%ButtonMinus.pressed.connect(_al_pulsar_menos)
+	%ButtonMultiplier.pressed.connect(_al_pulsar_multiplicador)
+	%SaveButton.pressed.connect(_al_pulsar_guardar)
 	
-	textoMultiplicador.text = "x" + str(multiplicadorActual)
+	%ButtonMultiplierLabel.text = "x" + str(multiplicadorActual)
 		
 	# Configuramos los xuxos del contenedor al arrancar por seguridad
 	preparar_contenedor_xuxos()
@@ -37,7 +26,7 @@ func _ready() -> void:
 
 # Función para asegurar que todos los huecos tienen textura y tamaño controlado
 func preparar_contenedor_xuxos() -> void:		
-	var hijos = contenedorXuixo.get_children()
+	var hijos = %XuixoContainer.get_children()
 	if hijos.size() == 0:
 		return
 		
@@ -61,7 +50,8 @@ func _al_pulsar_mas() -> void:
 	actualizar_fase_dos()
 
 func _al_pulsar_menos() -> void: 
-	quantitatXuixo = max(quantitatXuixo - multiplicadorActual, 1)
+	# Blindaje: nunca baja de 1
+	quantitatXuixo = max(quantitatXuixo - multiplicadorActual, 1)	
 	print("¡Botón (-) pulsado! Restando ", multiplicadorActual, ". Xuxos totales: ", quantitatXuixo)
 	actualizar_fase_dos()
 
@@ -72,30 +62,34 @@ func _al_pulsar_multiplicador() -> void:
 	
 	print("¡Botón multiplicador presionado! Su valor actual es: x", multiplicadorActual)
 	
-	textoMultiplicador.text = "x" + str(multiplicadorActual)
+	%ButtonMultiplierLabel.text = "x" + str(multiplicadorActual)
 
 func _al_pulsar_guardar() -> void:
-	print("--- GUARDANDO Y SALIENDO ---")
-	print("Número final de xuxos enviados: ", quantitatXuixo)
-	
-	var parametrosResultado = {
-		"quantitatXuixo": quantitatXuixo
-	}
-	# Aquí irá tu lógica de fundido (fade-in)
+	var scene_transition = get_tree().current_scene.find_child("SceneTransition")
+	if not scene_transition: return
+	print(params)
+	var target_quantity: int = params.customer.target_quantity
+	var target_mesure: int = params.customer.target_mesure
+	var custom_target: float = target_quantity / (target_mesure if target_mesure > 0 else GENERIC_XUIXO_SIZE) 
+	var final_validation: int = CustomerManager.validate_player_number(quantitatXuixo, custom_target)
+	match final_validation:
+		0: scene_transition.load_scene("res://scenes/shop_scene.tscn", params)
+		1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_higher_2)
+		-1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_lower_2)
 
 func actualizar_fase_dos() -> void:
-	var hijos = contenedorXuixo.get_children()
+	var hijos = %XuixoContainer.get_children()
 	for i in range(hijos.size()):
 		# Mostramos estrictamente desde 0 hasta la cantidad actual (tope 6)
 		hijos[i].visible = i < quantitatXuixo and i < LIMITE_VISUAL
 
-	contadorBollitos.text = "x " + str(quantitatXuixo)
-	contadorBollitos.visible = quantitatXuixo > LIMITE_VISUAL
+	%XuixoCounter.text = "x " + str(quantitatXuixo)
+	%XuixoCounter.visible = quantitatXuixo > LIMITE_VISUAL
 
-func setup(parametros) -> void: 
-	if parametros and parametros.customer: 
-		customer = parametros.customer
-		if customer.target_image: 
-			%TextureRect.texture = customer.target_image
+func setup(new_params) -> void: 
+	if new_params:
+		params = new_params
+		if new_params.customer and new_params.customer.target_image:
+			%TargetImage.texture = new_params.customer.target_image
 			
 	actualizar_fase_dos()

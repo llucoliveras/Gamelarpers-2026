@@ -3,6 +3,7 @@ extends Node2D
 @onready var aspect_ratio_container: HBoxContainer = %AspectRatioContainer
 @onready var object_image: TextureRect = %ObjectImage
 @onready var h_slider: HSlider = %HSlider
+@onready var save_button: Button = %SaveButton
 
 var scene_transition: SceneTransition
 var params: Dictionary
@@ -25,8 +26,15 @@ func _ready() -> void:
 
 func _on_button_pressed() -> void:
 	var value: float = h_slider.value
-	params.mesure_player_guess = value
 	
+	var validation_result: int = CustomerManager.validate_player_number(value, params.customer.target_mesure)
+	
+	match(validation_result):
+		0: successful_value()
+		1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_lower_1)
+		-1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_higher_1)
+
+func successful_value() -> void:
 	var next_scene: String = ""
 	if params.customer and params.customer.stage_2:
 		next_scene = "res://CàlculXuixos_.tscn"
@@ -35,7 +43,6 @@ func _on_button_pressed() -> void:
 	scene_transition = get_tree().current_scene.find_child("SceneTransition")
 	if not scene_transition: return
 	scene_transition.load_scene(next_scene, params)
-
 
 func _on_h_slider_value_changed(value: float) -> void:
 	# Ensure we have a valid width to scale against

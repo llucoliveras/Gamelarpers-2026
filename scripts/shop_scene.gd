@@ -6,27 +6,20 @@ const TEST = preload("uid://dglunesu7aubi")
 
 var scene_transition: SceneTransition
 var mesure_player_guess: int = -1
+var quantity_player_guess: int = -1
 var customer: CustomerData
 
 func setup(params: Dictionary) -> void:
-	if params and params.customer:
-		customer = params.customer
-	else:
+	if not params or (params and not params.customer):
 		customer = CustomerManager.get_next_customer()
-	if params and params.mesure_player_guess:
-		mesure_player_guess = params.mesure_player_guess
+	else:
+		customer = params.customer
 		animation_player.play("idle")
-		var is_correct_guess: int = CustomerManager.validate_player_number(mesure_player_guess)
-		print(is_correct_guess)
-		match is_correct_guess:
-			0:
-				DialogueManager.show_dialogue_balloon(customer.dialogue_exit)
-			-1: DialogueManager.show_dialogue_balloon(customer.dialogue_error_lower)
-			1: DialogueManager.show_dialogue_balloon(customer.dialogue_error_higher)
-		
+		DialogueManager.show_dialogue_balloon(customer.dialogue_exit)
+			
 	if customer and customer.portrait:
 		customer_node.change_sprite(customer.portrait)
-
+	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	animation_player.animation_finished.connect(_on_animation_player_animation_finished)
@@ -48,7 +41,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 				animation_player.play("shop_entry")
 
 func _on_dialogue_ended(dialogue):
-	if dialogue in [customer.dialogue_entry, customer.dialogue_error_higher, customer.dialogue_error_lower]:
+	if dialogue == customer.dialogue_entry:
 		_load_stage()
 	if dialogue == customer.dialogue_exit:
 		animation_player.play("shop_exit")
