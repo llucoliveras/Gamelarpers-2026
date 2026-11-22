@@ -20,6 +20,7 @@ config/icon="res://assets/images/icon.svg"
 CustomLevelManager="*uid://cbw0gao7d5vmp"
 DialogueManager="*uid://c3rodes2l3gxb"
 CustomerManager="*uid://d1mubj2u0awv1"
+GlobalMusic="*uid://bw3bbmkb182q"
 
 [dialogue_manager]
 
