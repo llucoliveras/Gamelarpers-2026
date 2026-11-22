@@ -11,7 +11,7 @@ extends Node2D
 		end_point = val
 		queue_redraw()
 
-@export var total_value: float = 100.0  # Total length value (e.g., 100 cm)
+@export var total_value: float = 50.0  # Total length value (e.g., 100 cm)
 @export var major_step: float = 10.0   # Label and tick interval (every 10 cm)
 @export var tick_height: float = 12.0  # Height of the tick marks in pixels
 @export var line_color: Color = Color.WHITE
