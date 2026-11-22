@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dvxg87yo3e46j"
+path="res://.godot/imported/Dia3_Pallasso_Error_Xuixo_Petit.dialogue-8001c8ca5392ca381e4a247c97f6e765.tres"
+
+[deps]
+
+source_file="res://Dia3_Pallasso_Error_Xuixo_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Pallasso_Error_Xuixo_Petit.dialogue-8001c8ca5392ca381e4a247c97f6e765.tres"]
+
+[params]
+
+defaults=true

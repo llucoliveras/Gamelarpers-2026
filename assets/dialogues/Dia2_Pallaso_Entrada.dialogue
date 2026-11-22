@@ -1,0 +1,11 @@
+~ start
+Pallasso: [speed=1.2][shake]Hola![/shake] 
+Tu: Emm[wait=0.5].[wait=0.5].[wait=0.5]. Hola. Tot bé?
+Pallasso: [speed=1.2][wave] Mes o menys, avui he aconseguit 22 riures.[/wave] 
+Tu: Oh, son bastants! Els comptes?
+Pallasso: [speed=1.2][wave] No, hi havien 22 persones i han rigut un cop.[/wave] 
+Tu: [wait=0.5].[wait=0.5].[wait=0.5].
+Pallasso: [speed=1.2][wave][wait=0.5].[wait=0.5].[wait=0.5].[/wave] 
+Pallasso: [speed=1.2][wave] Sisplau tants xuixos com de llarg es el meu globus.[/wave] 
+Tu: Okay, ara te'ls porto ok?
+=> END

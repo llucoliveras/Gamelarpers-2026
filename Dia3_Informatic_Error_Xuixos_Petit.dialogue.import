@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dhxq8pxjqjvlg"
+path="res://.godot/imported/Dia3_Informatic_Error_Xuixos_Petit.dialogue-f193fee7f02695a29b1b4693a21ca455.tres"
+
+[deps]
+
+source_file="res://Dia3_Informatic_Error_Xuixos_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Informatic_Error_Xuixos_Petit.dialogue-f193fee7f02695a29b1b4693a21ca455.tres"]
+
+[params]
+
+defaults=true

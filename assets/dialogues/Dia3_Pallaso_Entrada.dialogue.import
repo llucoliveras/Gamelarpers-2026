@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b227bed0ih1xi"
+path="res://.godot/imported/Dia3_Pallaso_Entrada.dialogue-6ab6aeb6bb7d8db9f4a8f16bd6d6bfed.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia3_Pallaso_Entrada.dialogue"
+dest_files=["res://.godot/imported/Dia3_Pallaso_Entrada.dialogue-6ab6aeb6bb7d8db9f4a8f16bd6d6bfed.tres"]
+
+[params]
+
+defaults=true
