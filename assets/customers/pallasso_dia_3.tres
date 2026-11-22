@@ -2,10 +2,13 @@
 
 [ext_resource type="Resource" uid="uid://b227bed0ih1xi" path="res://assets/dialogues/Dia3_Pallaso_Entrada.dialogue" id="1_dr57y"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_ld5s0"]
+[ext_resource type="Resource" uid="uid://djni1r21xdpnd" path="res://assets/dialogues/Dia3_Pallasso_Error_Xuixo_Gran.dialogue" id="2_687qp"]
 [ext_resource type="Resource" uid="uid://bc2botlkl8ph7" path="res://assets/dialogues/Dia3_Pallaso_Error_Gran.dialogue" id="2_bdgno"]
 [ext_resource type="Resource" uid="uid://dx2clbpxjlf0b" path="res://assets/dialogues/Dia3_Pallaso_Error_Petit.dialogue" id="3_pekju"]
 [ext_resource type="Resource" uid="uid://bon8yeglv5uue" path="res://assets/dialogues/Dia3_Pallaso_Sortida.dialogue" id="4_687qp"]
+[ext_resource type="Resource" uid="uid://dvxg87yo3e46j" path="res://assets/dialogues/Dia3_Pallasso_Error_Xuixo_Petit.dialogue" id="4_y1wvt"]
 [ext_resource type="Texture2D" uid="uid://dde1d4pr38k11" path="res://assets/customers/pallaso_feliç.png" id="5_y1wvt"]
+[ext_resource type="Texture2D" uid="uid://ctdyv7xk0avon" path="res://assets/objectes/elefant.png" id="9_uv2vb"]
 
 [resource]
 script = ExtResource("1_ld5s0")
@@ -13,9 +16,12 @@ customer_name = "Pallasso Content"
 portrait = ExtResource("5_y1wvt")
 target_mesure = 3
 target_quantity = 225
+target_image = ExtResource("9_uv2vb")
 dialogue_entry = ExtResource("1_dr57y")
-dialogue_error_lower = ExtResource("3_pekju")
-dialogue_error_higher = ExtResource("2_bdgno")
+dialogue_error_lower_1 = ExtResource("4_y1wvt")
+dialogue_error_higher_1 = ExtResource("2_687qp")
+dialogue_error_lower_2 = ExtResource("3_pekju")
+dialogue_error_higher_2 = ExtResource("2_bdgno")
 dialogue_exit = ExtResource("4_687qp")
 stage_1 = true
 stage_2 = true
