@@ -31,8 +31,8 @@ func _on_button_pressed() -> void:
 	
 	match(validation_result):
 		0: successful_value()
-		1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_lower_1)
-		-1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_higher_1)
+		1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_higher_1)
+		-1: DialogueManager.show_dialogue_balloon(params.customer.dialogue_error_lower_1)
 
 func successful_value() -> void:
 	var next_scene: String = ""

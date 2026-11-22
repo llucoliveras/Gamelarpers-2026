@@ -11,7 +11,7 @@
 script = ExtResource("6_4dfvi")
 customer_name = "JohnQuuk"
 portrait = ExtResource("5_wfy3v")
-target_mesure = 47
+target_mesure = 5
 target_quantity = 1
 dialogue_entry = ExtResource("1_5xm0f")
 dialogue_error_lower_1 = ExtResource("3_m3km5")

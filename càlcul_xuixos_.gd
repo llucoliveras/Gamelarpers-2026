@@ -1,6 +1,6 @@
 extends Node2D
 
-const GENERIC_XUIXO_SIZE: int = 30
+const GENERIC_XUIXO_SIZE: int = 15
 
 # Variables de estado (mínimo 1 xuxo siempre)
 var quantitatXuixo = 1
@@ -70,6 +70,7 @@ func _al_pulsar_guardar() -> void:
 	print(params)
 	var target_quantity: int = params.customer.target_quantity
 	var target_mesure: int = params.customer.target_mesure
+	print(target_quantity, ", ", target_mesure)
 	var custom_target: float = target_quantity / (target_mesure if target_mesure > 0 else GENERIC_XUIXO_SIZE) 
 	var final_validation: int = CustomerManager.validate_player_number(quantitatXuixo, custom_target)
 	match final_validation:

@@ -1,11 +1,28 @@
 extends Node
 
 const ERROR_MARGIN: float = 0.10
+
+const AVIA = preload("uid://cdl3fhlhrydu3")
+const AVIA_DIA_3 = preload("uid://cwt42aggshphm")
+const INFORMATICO = preload("uid://b3fbspti12l4s")
+const INFORMATICO_DIA_3 = preload("uid://dk4psvbaubo2d")
 const PALLASSO_DIA_2 = preload("uid://b5rgh80sdtahf")
 const PALLASSO_DIA_3 = preload("uid://c4eqprumavpr")
+const JOHN_QUOK = preload("uid://beau74kk8d4l2")
+const JOHN_QUOKDIA_3 = preload("uid://cp7bil4g5kaop")
+const RATA = preload("uid://b32ycbbrjyxy3")
+const PEPE = preload("uid://caavsh2ib217x")
 
+# informatico/amir, avia carme, jhon quok, dafne, pallasso, pepe, informatico/amir dia 3, jhon quok dia 3, pallasso dia 3, rata
 var customer_queue: Array[CustomerData] = [
-	PALLASSO_DIA_2, PALLASSO_DIA_3
+	INFORMATICO,
+	AVIA,
+	JOHN_QUOK,
+	PALLASSO_DIA_2,
+	INFORMATICO_DIA_3,
+	JOHN_QUOKDIA_3,
+	PALLASSO_DIA_3,
+	RATA
 ]
 var current_index: int = 0
 
