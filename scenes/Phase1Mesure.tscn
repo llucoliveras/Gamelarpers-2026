@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cxlf3hwqoq45w"]
 
 [ext_resource type="Script" uid="uid://ctwoo84na1f2k" path="res://scripts/phase_1_mesure.gd" id="1_n0d5s"]
-[ext_resource type="Texture2D" uid="uid://dhit5nvpevvcy" path="res://assets/images/baker_table_top_view.jpg" id="2_4tpf0"]
-[ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/xuixo.png" id="3_8cg0o"]
+[ext_resource type="Texture2D" uid="uid://dhit5nvpevvcy" path="res://assets/images/SUBSTITUIR AQUESTES IMATGES/baker_table_top_view.jpg" id="2_4tpf0"]
+[ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="3_8cg0o"]
 [ext_resource type="Script" uid="uid://b8kthlws6qnsp" path="res://scripts/mesure_line.gd" id="4_4tpf0"]
 
 [node name="Phase1Mesure" type="Node2D" unique_id=1514824332]

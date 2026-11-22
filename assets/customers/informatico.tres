@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://b3fbspti12l4s"]
 
-[ext_resource type="Resource" uid="uid://v6sb722ymr38" path="res://assets/dialogues/Dia1_Amir_entrada.dialogue" id="1_5xm0f"]
-[ext_resource type="Resource" uid="uid://b62op4cmlnpfl" path="res://assets/dialogues/Dia1_Amir_error_grande.dialogue" id="2_i15ju"]
-[ext_resource type="Resource" uid="uid://cbv3fioa2twmd" path="res://assets/dialogues/Dia1_Amir_error_petit.dialogue" id="3_m3km5"]
-[ext_resource type="Resource" uid="uid://brsevm73piwmi" path="res://assets/dialogues/Dia1_Amir_sortida.dialogue" id="4_lymfd"]
-[ext_resource type="Texture2D" uid="uid://hyvv0upr7lrd" path="res://assets/customers/programador.png" id="5_wfy3v"]
+[ext_resource type="Resource" uid="uid://v6sb722ymr38" path="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_entrada.dialogue" id="1_5xm0f"]
+[ext_resource type="Resource" uid="uid://b62op4cmlnpfl" path="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_error_grande.dialogue" id="2_i15ju"]
+[ext_resource type="Resource" uid="uid://cbv3fioa2twmd" path="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_error_petit.dialogue" id="3_m3km5"]
+[ext_resource type="Resource" uid="uid://brsevm73piwmi" path="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_sortida.dialogue" id="4_lymfd"]
+[ext_resource type="Texture2D" uid="uid://hyvv0upr7lrd" path="res://assets/images/customers/programador.png" id="5_wfy3v"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="6_4dfvi"]
 
 [resource]

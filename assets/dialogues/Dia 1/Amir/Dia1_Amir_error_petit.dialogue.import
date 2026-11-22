@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cbv3fioa2twmd"
+path="res://.godot/imported/Dia1_Amir_error_petit.dialogue-171104abed917dc275b62104875733a9.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_error_petit.dialogue"
+dest_files=["res://.godot/imported/Dia1_Amir_error_petit.dialogue-171104abed917dc275b62104875733a9.tres"]
+
+[params]
+
+defaults=true

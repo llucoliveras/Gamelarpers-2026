@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cdl3fhlhrydu3"]
 
-[ext_resource type="Resource" uid="uid://chan41131km2o" path="res://assets/dialogues/Dia1_Avia_entrada.dialogue" id="1_eo7sd"]
+[ext_resource type="Resource" uid="uid://chan41131km2o" path="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_entrada.dialogue" id="1_eo7sd"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_goex1"]
-[ext_resource type="Resource" uid="uid://dmvw0qw2bwym8" path="res://assets/dialogues/Dia1_Avia_error_grande.dialogue" id="2_fy31h"]
-[ext_resource type="Resource" uid="uid://dwwt7a15rbwog" path="res://assets/dialogues/Dia1_Avia_error_petit.dialogue" id="3_cspfi"]
-[ext_resource type="Resource" uid="uid://uy4oyfhr2rn8" path="res://assets/dialogues/Dia1_Avia_sortida.dialogue" id="4_xhtc7"]
-[ext_resource type="Texture2D" uid="uid://s7giawc2rtqd" path="res://assets/customers/dona_vella.png" id="5_eo7sd"]
+[ext_resource type="Resource" uid="uid://dmvw0qw2bwym8" path="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_error_grande.dialogue" id="2_fy31h"]
+[ext_resource type="Resource" uid="uid://dwwt7a15rbwog" path="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_error_petit.dialogue" id="3_cspfi"]
+[ext_resource type="Resource" uid="uid://uy4oyfhr2rn8" path="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_sortida.dialogue" id="4_xhtc7"]
+[ext_resource type="Texture2D" uid="uid://s7giawc2rtqd" path="res://assets/images/customers/dona_vella.png" id="5_c4kce"]
 
 [resource]
 script = ExtResource("1_goex1")
-portrait = ExtResource("5_eo7sd")
+portrait = ExtResource("5_c4kce")
 target_mesure = 15
 target_quantity = 1
 dialogue_entry = ExtResource("1_eo7sd")

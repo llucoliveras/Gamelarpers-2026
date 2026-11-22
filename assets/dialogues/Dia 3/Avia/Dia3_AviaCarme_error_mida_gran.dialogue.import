@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cluy7x3tjbywn"
+path="res://.godot/imported/Dia3_AviaCarme_error_mida_gran.dialogue-aa24b8c3554dae8c48eb5ccc9a462fac.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_error_mida_gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_error_mida_gran.dialogue-aa24b8c3554dae8c48eb5ccc9a462fac.tres"]
+
+[params]
+
+defaults=true

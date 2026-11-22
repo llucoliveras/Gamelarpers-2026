@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://r3sg0y8c35ul"
+path="res://.godot/imported/Dia2_Dafne_error_grande.dialogue-bf9964eb68d3cccf546c10a9c6a9cef9.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_error_grande.dialogue"
+dest_files=["res://.godot/imported/Dia2_Dafne_error_grande.dialogue-bf9964eb68d3cccf546c10a9c6a9cef9.tres"]
+
+[params]
+
+defaults=true

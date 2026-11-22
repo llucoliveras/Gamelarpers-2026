@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://djf8frpteswnm"
+path="res://.godot/imported/Dia3_JohnQuok_error_mida_grande.dialogue-ebf938a38a1a38d22ba7e3cc06473d54.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_mida_grande.dialogue"
+dest_files=["res://.godot/imported/Dia3_JohnQuok_error_mida_grande.dialogue-ebf938a38a1a38d22ba7e3cc06473d54.tres"]
+
+[params]
+
+defaults=true

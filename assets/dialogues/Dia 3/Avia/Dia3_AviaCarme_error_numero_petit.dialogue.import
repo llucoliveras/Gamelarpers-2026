@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dcmkwwugfi726"
+path="res://.godot/imported/Dia3_AviaCarme_error_numero_petit.dialogue-4d27621f6336ee5e8a97444add535caa.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_error_numero_petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_error_numero_petit.dialogue-4d27621f6336ee5e8a97444add535caa.tres"]
+
+[params]
+
+defaults=true

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://c4eqprumavpr"]
 
-[ext_resource type="Resource" uid="uid://b227bed0ih1xi" path="res://assets/dialogues/Dia3_Pallaso_Entrada.dialogue" id="1_dr57y"]
+[ext_resource type="Resource" uid="uid://b227bed0ih1xi" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Entrada.dialogue" id="1_dr57y"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_ld5s0"]
-[ext_resource type="Resource" uid="uid://djni1r21xdpnd" path="res://assets/dialogues/Dia3_Pallasso_Error_Xuixo_Gran.dialogue" id="2_687qp"]
-[ext_resource type="Resource" uid="uid://bc2botlkl8ph7" path="res://assets/dialogues/Dia3_Pallaso_Error_Gran.dialogue" id="2_bdgno"]
-[ext_resource type="Resource" uid="uid://dx2clbpxjlf0b" path="res://assets/dialogues/Dia3_Pallaso_Error_Petit.dialogue" id="3_pekju"]
-[ext_resource type="Resource" uid="uid://bon8yeglv5uue" path="res://assets/dialogues/Dia3_Pallaso_Sortida.dialogue" id="4_687qp"]
-[ext_resource type="Resource" uid="uid://dvxg87yo3e46j" path="res://assets/dialogues/Dia3_Pallasso_Error_Xuixo_Petit.dialogue" id="4_y1wvt"]
-[ext_resource type="Texture2D" uid="uid://dde1d4pr38k11" path="res://assets/customers/pallaso_feliç.png" id="5_y1wvt"]
-[ext_resource type="Texture2D" uid="uid://ctdyv7xk0avon" path="res://assets/objectes/elefant.png" id="9_uv2vb"]
+[ext_resource type="Resource" uid="uid://djni1r21xdpnd" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallasso_Error_Xuixo_Gran.dialogue" id="2_687qp"]
+[ext_resource type="Resource" uid="uid://bc2botlkl8ph7" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Error_Gran.dialogue" id="2_bdgno"]
+[ext_resource type="Resource" uid="uid://dx2clbpxjlf0b" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Error_Petit.dialogue" id="3_pekju"]
+[ext_resource type="Resource" uid="uid://bon8yeglv5uue" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Sortida.dialogue" id="4_687qp"]
+[ext_resource type="Resource" uid="uid://dvxg87yo3e46j" path="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallasso_Error_Xuixo_Petit.dialogue" id="4_y1wvt"]
+[ext_resource type="Texture2D" uid="uid://dde1d4pr38k11" path="res://assets/images/customers/pallaso_feliç.png" id="5_y1wvt"]
+[ext_resource type="Texture2D" uid="uid://ctdyv7xk0avon" path="res://assets/images/objectes/elefant.png" id="9_uv2vb"]
 
 [resource]
 script = ExtResource("1_ld5s0")

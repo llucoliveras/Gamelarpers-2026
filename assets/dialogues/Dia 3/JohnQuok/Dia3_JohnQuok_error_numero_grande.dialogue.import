@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://c83fai1rumond"
+path="res://.godot/imported/Dia3_JohnQuok_error_numero_grande.dialogue-ee69b7b786318c067914b6225a6451e7.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_numero_grande.dialogue"
+dest_files=["res://.godot/imported/Dia3_JohnQuok_error_numero_grande.dialogue-ee69b7b786318c067914b6225a6451e7.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://86266jq35ky3"
+path="res://.godot/imported/Dia3_Informatic_Error_Xuixos_Gran.dialogue-8ba4fc33d36bff15a17080c18888a777.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Amir/Dia3_Informatic_Error_Xuixos_Gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_Informatic_Error_Xuixos_Gran.dialogue-8ba4fc33d36bff15a17080c18888a777.tres"]
+
+[params]
+
+defaults=true

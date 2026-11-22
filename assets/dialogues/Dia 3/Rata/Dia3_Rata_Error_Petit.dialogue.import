@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://deqhavhk7qa50"
+path="res://.godot/imported/Dia3_Rata_Error_Petit.dialogue-8e00b61a35238dd02e3d5969afc3f1a2.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Rata/Dia3_Rata_Error_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Error_Petit.dialogue-8e00b61a35238dd02e3d5969afc3f1a2.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://djni1r21xdpnd"
+path="res://.godot/imported/Dia3_Pallasso_Error_Xuixo_Gran.dialogue-997c2aee017e6d00e61891d7ea9cd67a.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallasso_Error_Xuixo_Gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_Pallasso_Error_Xuixo_Gran.dialogue-997c2aee017e6d00e61891d7ea9cd67a.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b08whpihhq1c4"
+path="res://.godot/imported/Dia2_Pepe_entrada.dialogue-a41e382d163925ec601c7f5bc9bbf00b.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 2/Pepe/Dia2_Pepe_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia2_Pepe_entrada.dialogue-a41e382d163925ec601c7f5bc9bbf00b.tres"]
+
+[params]
+
+defaults=true

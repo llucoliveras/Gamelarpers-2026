@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://b5rgh80sdtahf"]
 
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_3e5vg"]
-[ext_resource type="Resource" uid="uid://dr75xuoybvljk" path="res://assets/dialogues/Dia2_Pallaso_Entrada.dialogue" id="1_feqy8"]
-[ext_resource type="Resource" uid="uid://5qevdx86yhsy" path="res://assets/dialogues/Dia2_Pallaso_Error_Gran.dialogue" id="2_yri0q"]
-[ext_resource type="Resource" uid="uid://72ee23gjng1f" path="res://assets/dialogues/Dia2_Pallaso_Error_Petit.dialogue" id="3_uj78u"]
-[ext_resource type="Resource" uid="uid://b5b86kyfanwr0" path="res://assets/dialogues/Dia2_Pallaso_Sortida.dialogue" id="4_fbw5x"]
-[ext_resource type="Texture2D" uid="uid://bsu8a1knw5u82" path="res://assets/customers/pallaso_trist.png" id="5_app60"]
-[ext_resource type="Texture2D" uid="uid://b5uh1bagab4me" path="res://assets/objectes/globo.png" id="7_yri0q"]
+[ext_resource type="Resource" uid="uid://dr75xuoybvljk" path="res://assets/dialogues/Dia 2/Pallasso/Dia2_Pallaso_Entrada.dialogue" id="1_feqy8"]
+[ext_resource type="Resource" uid="uid://5qevdx86yhsy" path="res://assets/dialogues/Dia 2/Pallasso/Dia2_Pallaso_Error_Gran.dialogue" id="2_yri0q"]
+[ext_resource type="Resource" uid="uid://72ee23gjng1f" path="res://assets/dialogues/Dia 2/Pallasso/Dia2_Pallaso_Error_Petit.dialogue" id="3_uj78u"]
+[ext_resource type="Resource" uid="uid://b5b86kyfanwr0" path="res://assets/dialogues/Dia 2/Pallasso/Dia2_Pallaso_Sortida.dialogue" id="4_fbw5x"]
+[ext_resource type="Texture2D" uid="uid://bsu8a1knw5u82" path="res://assets/images/customers/pallaso_trist.png" id="5_app60"]
+[ext_resource type="Texture2D" uid="uid://b5uh1bagab4me" path="res://assets/images/objectes/globo.png" id="7_yri0q"]
 
 [resource]
 script = ExtResource("1_3e5vg")

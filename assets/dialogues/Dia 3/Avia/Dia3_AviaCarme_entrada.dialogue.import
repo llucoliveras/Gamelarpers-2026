@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://drm2r3tpooue3"
+path="res://.godot/imported/Dia3_AviaCarme_entrada.dialogue-2d75060c684a0b8c0ae13c8b5629d631.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_entrada.dialogue-2d75060c684a0b8c0ae13c8b5629d631.tres"]
+
+[params]
+
+defaults=true

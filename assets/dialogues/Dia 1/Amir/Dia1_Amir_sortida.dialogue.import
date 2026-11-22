@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://brsevm73piwmi"
+path="res://.godot/imported/Dia1_Amir_sortida.dialogue-aeb299aa3f5a898a1ce09aa266f0ad0b.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_sortida.dialogue"
+dest_files=["res://.godot/imported/Dia1_Amir_sortida.dialogue-aeb299aa3f5a898a1ce09aa266f0ad0b.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dmvw0qw2bwym8"
+path="res://.godot/imported/Dia1_Avia_error_grande.dialogue-99624686e2d68fd8dc82fa1fa410dbde.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_error_grande.dialogue"
+dest_files=["res://.godot/imported/Dia1_Avia_error_grande.dialogue-99624686e2d68fd8dc82fa1fa410dbde.tres"]
+
+[params]
+
+defaults=true

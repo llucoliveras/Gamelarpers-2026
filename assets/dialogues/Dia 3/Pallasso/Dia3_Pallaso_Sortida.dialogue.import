@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bon8yeglv5uue"
+path="res://.godot/imported/Dia3_Pallaso_Sortida.dialogue-9ae0fc0dd2a15ce8f57f3f61b43a92c5.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Sortida.dialogue"
+dest_files=["res://.godot/imported/Dia3_Pallaso_Sortida.dialogue-9ae0fc0dd2a15ce8f57f3f61b43a92c5.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://5qevdx86yhsy"
+path="res://.godot/imported/Dia2_Pallaso_Error_Gran.dialogue-9e83bbaeed1258b6a48105906586c707.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 2/Pallasso/Dia2_Pallaso_Error_Gran.dialogue"
+dest_files=["res://.godot/imported/Dia2_Pallaso_Error_Gran.dialogue-9e83bbaeed1258b6a48105906586c707.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bhq43gk12okhn"
+path="res://.godot/imported/Dia3_JohnQuok_error_numero_petit.dialogue-f4fa56d9fca295c582b2c14b41d2f471.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_numero_petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_JohnQuok_error_numero_petit.dialogue-f4fa56d9fca295c582b2c14b41d2f471.tres"]
+
+[params]
+
+defaults=true

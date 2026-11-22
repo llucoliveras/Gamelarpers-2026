@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bocfwkrq7hnd0"
+path="res://.godot/imported/Dia3_JohnQuok_entrada.dialogue-af3a8993fe69031e256079977aa5a2c4.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia3_JohnQuok_entrada.dialogue-af3a8993fe69031e256079977aa5a2c4.tres"]
+
+[params]
+
+defaults=true

@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://caavsh2ib217x"]
 
-[ext_resource type="Resource" uid="uid://b08whpihhq1c4" path="res://assets/dialogues/Dia2_Pepe_entrada.dialogue" id="1_mivyk"]
-[ext_resource type="Resource" uid="uid://b18r75ojdkadh" path="res://assets/dialogues/Dia2_Pepe_error_petit.dialogue" id="2_dsk7t"]
-[ext_resource type="Resource" uid="uid://iu1fmo7xlwit" path="res://assets/dialogues/Dia2_Pepe_sortida.dialogue" id="3_6t18o"]
-[ext_resource type="Texture2D" uid="uid://dl6tsd7fw6u8k" path="res://assets/customers/protagonista.png" id="4_gv6t1"]
+[ext_resource type="Resource" uid="uid://b08whpihhq1c4" path="res://assets/dialogues/Dia 2/Pepe/Dia2_Pepe_entrada.dialogue" id="1_mivyk"]
+[ext_resource type="Resource" uid="uid://b18r75ojdkadh" path="res://assets/dialogues/Dia 2/Pepe/Dia2_Pepe_error_petit.dialogue" id="2_dsk7t"]
+[ext_resource type="Resource" uid="uid://iu1fmo7xlwit" path="res://assets/dialogues/Dia 2/Pepe/Dia2_Pepe_sortida.dialogue" id="3_6t18o"]
+[ext_resource type="Texture2D" uid="uid://dl6tsd7fw6u8k" path="res://assets/images/customers/protagonista.png" id="4_gv6t1"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="5_s7uda"]
-[ext_resource type="Texture2D" uid="uid://bmd357ofs1ljw" path="res://assets/objectes/pizza.png" id="6_v85pt"]
+[ext_resource type="Texture2D" uid="uid://bmd357ofs1ljw" path="res://assets/images/objectes/pizza.png" id="6_v85pt"]
 
 [resource]
 script = ExtResource("5_s7uda")

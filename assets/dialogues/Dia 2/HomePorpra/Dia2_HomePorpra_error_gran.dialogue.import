@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cnfo8iu6jabvy"
+path="res://.godot/imported/Dia2_HomePorpra_error_gran.dialogue-0303943c975447acad469c3b3ff7861f.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 2/HomePorpra/Dia2_HomePorpra_error_gran.dialogue"
+dest_files=["res://.godot/imported/Dia2_HomePorpra_error_gran.dialogue-0303943c975447acad469c3b3ff7861f.tres"]
+
+[params]
+
+defaults=true

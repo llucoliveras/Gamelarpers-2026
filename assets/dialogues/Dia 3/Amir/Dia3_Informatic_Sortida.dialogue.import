@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cg5enjrva70je"
+path="res://.godot/imported/Dia3_Informatic_Sortida.dialogue-9c4f513306dcf60cfc43ecfa0a58f554.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Amir/Dia3_Informatic_Sortida.dialogue"
+dest_files=["res://.godot/imported/Dia3_Informatic_Sortida.dialogue-9c4f513306dcf60cfc43ecfa0a58f554.tres"]
+
+[params]
+
+defaults=true

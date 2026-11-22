@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b62op4cmlnpfl"
+path="res://.godot/imported/Dia1_Amir_error_grande.dialogue-84ea56b71e795a0286e5255a8bf3454b.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_error_grande.dialogue"
+dest_files=["res://.godot/imported/Dia1_Amir_error_grande.dialogue-84ea56b71e795a0286e5255a8bf3454b.tres"]
+
+[params]
+
+defaults=true

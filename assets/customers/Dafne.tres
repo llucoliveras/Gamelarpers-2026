@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://c5myabb1222v6"]
 
-[ext_resource type="Resource" uid="uid://bfjimlsu1m8o0" path="res://assets/dialogues/Dia2_Dafne_entrada.dialogue" id="1_2abe5"]
+[ext_resource type="Resource" uid="uid://bfjimlsu1m8o0" path="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_entrada.dialogue" id="1_2abe5"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_luktb"]
-[ext_resource type="Resource" uid="uid://r3sg0y8c35ul" path="res://assets/dialogues/Dia2_Dafne_error_grande.dialogue" id="2_f1heh"]
-[ext_resource type="Resource" uid="uid://bo6putv0bahae" path="res://assets/dialogues/Dia2_Dafne_error_petit.dialogue" id="3_73wfs"]
+[ext_resource type="Resource" uid="uid://r3sg0y8c35ul" path="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_error_grande.dialogue" id="2_f1heh"]
+[ext_resource type="Resource" uid="uid://bo6putv0bahae" path="res://assets/dialogues/Dia 2/Dafne/Dia2_Dafne_error_petit.dialogue" id="3_73wfs"]
 [ext_resource type="Resource" uid="uid://butaocno6r7p" path="res://Dia2_Dafne_Sortida.dialogue" id="4_2ob2v"]
 
 [resource]

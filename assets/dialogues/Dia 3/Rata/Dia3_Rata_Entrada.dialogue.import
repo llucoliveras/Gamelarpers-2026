@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://jm2hs18dv4pk"
+path="res://.godot/imported/Dia3_Rata_Entrada.dialogue-397ce75386ca1c518899ce69de0d5241.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Rata/Dia3_Rata_Entrada.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Entrada.dialogue-397ce75386ca1c518899ce69de0d5241.tres"]
+
+[params]
+
+defaults=true

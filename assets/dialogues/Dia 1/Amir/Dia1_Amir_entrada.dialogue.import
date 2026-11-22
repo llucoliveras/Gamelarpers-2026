@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://v6sb722ymr38"
+path="res://.godot/imported/Dia1_Amir_entrada.dialogue-89110087f03a9e8b0a9012a95c9f67a2.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Amir/Dia1_Amir_entrada.dialogue"
+dest_files=["res://.godot/imported/Dia1_Amir_entrada.dialogue-89110087f03a9e8b0a9012a95c9f67a2.tres"]
+
+[params]
+
+defaults=true

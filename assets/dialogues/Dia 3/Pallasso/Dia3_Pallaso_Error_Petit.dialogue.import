@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dx2clbpxjlf0b"
+path="res://.godot/imported/Dia3_Pallaso_Error_Petit.dialogue-228fc002cd91a93489aa810254e7575f.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Pallasso/Dia3_Pallaso_Error_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Pallaso_Error_Petit.dialogue-228fc002cd91a93489aa810254e7575f.tres"]
+
+[params]
+
+defaults=true

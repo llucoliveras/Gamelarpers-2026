@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://20q8psniqmp7"
+path="res://.godot/imported/Dia3_Rata_Error_Xuixo_Gran.dialogue-f804a0367ae1ed4523c78dcbcbd300ad.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Rata/Dia3_Rata_Error_Xuixo_Gran.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Error_Xuixo_Gran.dialogue-f804a0367ae1ed4523c78dcbcbd300ad.tres"]
+
+[params]
+
+defaults=true

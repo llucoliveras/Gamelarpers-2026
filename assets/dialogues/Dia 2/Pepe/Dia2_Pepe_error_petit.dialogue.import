@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://b18r75ojdkadh"
+path="res://.godot/imported/Dia2_Pepe_error_petit.dialogue-327c3d32fcbd74fabbcf92ec403afd01.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 2/Pepe/Dia2_Pepe_error_petit.dialogue"
+dest_files=["res://.godot/imported/Dia2_Pepe_error_petit.dialogue-327c3d32fcbd74fabbcf92ec403afd01.tres"]
+
+[params]
+
+defaults=true

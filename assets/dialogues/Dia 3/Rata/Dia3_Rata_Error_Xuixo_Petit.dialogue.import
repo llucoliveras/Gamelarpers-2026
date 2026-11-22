@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bmy4a0sqcaisn"
+path="res://.godot/imported/Dia3_Rata_Error_Xuixo_Petit.dialogue-4ca0762875d06389f553ac39771e818e.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Rata/Dia3_Rata_Error_Xuixo_Petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Error_Xuixo_Petit.dialogue-4ca0762875d06389f553ac39771e818e.tres"]
+
+[params]
+
+defaults=true

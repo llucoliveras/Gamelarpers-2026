@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cp7bil4g5kaop"]
 
-[ext_resource type="Resource" uid="uid://bocfwkrq7hnd0" path="res://assets/dialogues/Dia3_JohnQuok_entrada.dialogue" id="1_u5h83"]
+[ext_resource type="Resource" uid="uid://bocfwkrq7hnd0" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_entrada.dialogue" id="1_u5h83"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_xajv8"]
-[ext_resource type="Resource" uid="uid://djf8frpteswnm" path="res://assets/dialogues/Dia3_JohnQuok_error_mida_grande.dialogue" id="2_cw0gx"]
-[ext_resource type="Resource" uid="uid://c83fai1rumond" path="res://assets/dialogues/Dia3_JohnQuok_error_numero_grande.dialogue" id="3_qtdtg"]
-[ext_resource type="Resource" uid="uid://ctxeskj8dy8jr" path="res://assets/dialogues/Dia3_JohnQuok_error_mida_petit.dialogue" id="4_dsto6"]
-[ext_resource type="Resource" uid="uid://bhq43gk12okhn" path="res://assets/dialogues/Dia3_JohnQuok_error_numero_petit.dialogue" id="5_c3x1s"]
-[ext_resource type="Resource" uid="uid://fu6x2jqi8cpi" path="res://assets/dialogues/Dia3_JohnQuok_sortida.dialogue" id="6_j5p0p"]
-[ext_resource type="Texture2D" uid="uid://bixlaooojclcd" path="res://assets/customers/jungkook.png" id="7_v6qtm"]
+[ext_resource type="Resource" uid="uid://djf8frpteswnm" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_mida_grande.dialogue" id="2_cw0gx"]
+[ext_resource type="Resource" uid="uid://c83fai1rumond" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_numero_grande.dialogue" id="3_qtdtg"]
+[ext_resource type="Resource" uid="uid://ctxeskj8dy8jr" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_mida_petit.dialogue" id="4_dsto6"]
+[ext_resource type="Resource" uid="uid://bhq43gk12okhn" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_numero_petit.dialogue" id="5_c3x1s"]
+[ext_resource type="Resource" uid="uid://fu6x2jqi8cpi" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_sortida.dialogue" id="6_j5p0p"]
+[ext_resource type="Texture2D" uid="uid://bixlaooojclcd" path="res://assets/images/customers/jungkook.png" id="7_v6qtm"]
 
 [resource]
 script = ExtResource("1_xajv8")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://ctxeskj8dy8jr"
+path="res://.godot/imported/Dia3_JohnQuok_error_mida_petit.dialogue-3e02d81a4b62369f764b3951688f592b.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_mida_petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_JohnQuok_error_mida_petit.dialogue-3e02d81a4b62369f764b3951688f592b.tres"]
+
+[params]
+
+defaults=true

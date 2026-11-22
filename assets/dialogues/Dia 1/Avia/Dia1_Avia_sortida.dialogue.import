@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://uy4oyfhr2rn8"
+path="res://.godot/imported/Dia1_Avia_sortida.dialogue-ed39d4c2f9a7c56db8b9bc20c966a523.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 1/Avia/Dia1_Avia_sortida.dialogue"
+dest_files=["res://.godot/imported/Dia1_Avia_sortida.dialogue-ed39d4c2f9a7c56db8b9bc20c966a523.tres"]
+
+[params]
+
+defaults=true

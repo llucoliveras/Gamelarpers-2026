@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bco3lbhaymg52"
+path="res://.godot/imported/Dia3_Rata_Sortida.dialogue-8d34b22840fabb10352e2455bde1fc47.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Rata/Dia3_Rata_Sortida.dialogue"
+dest_files=["res://.godot/imported/Dia3_Rata_Sortida.dialogue-8d34b22840fabb10352e2455bde1fc47.tres"]
+
+[params]
+
+defaults=true

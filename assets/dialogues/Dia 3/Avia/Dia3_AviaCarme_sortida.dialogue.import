@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://d010c8qdotieo"
+path="res://.godot/imported/Dia3_AviaCarme_sortida.dialogue-926e3f438c514d5b2c0f01c3f50c971f.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_sortida.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_sortida.dialogue-926e3f438c514d5b2c0f01c3f50c971f.tres"]
+
+[params]
+
+defaults=true

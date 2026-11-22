@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://demyamwh5k31a"
+path="res://.godot/imported/Dia3_AviaCarme_error_mida_petit.dialogue-b2635416fc1bfac6dc0cb63498d847e6.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_error_mida_petit.dialogue"
+dest_files=["res://.godot/imported/Dia3_AviaCarme_error_mida_petit.dialogue-b2635416fc1bfac6dc0cb63498d847e6.tres"]
+
+[params]
+
+defaults=true

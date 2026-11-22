@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dpwknj6wi6jxd"
+path="res://.godot/imported/Dia3_Informatico_Entrada.dialogue-145f1d7ca637ef596ab8486bf53a7ebe.tres"
+
+[deps]
+
+source_file="res://assets/dialogues/Dia 3/Amir/Dia3_Informatico_Entrada.dialogue"
+dest_files=["res://.godot/imported/Dia3_Informatico_Entrada.dialogue-145f1d7ca637ef596ab8486bf53a7ebe.tres"]
+
+[params]
+
+defaults=true
