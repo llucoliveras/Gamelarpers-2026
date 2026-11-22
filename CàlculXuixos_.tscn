@@ -5,7 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/images/icon.svg" id="3_kw1ds"]
 [ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="4_70xud"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8oub"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7b0at"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70xud"]
+
 [node name="Ventana_evaluacion" type="Node2D" unique_id=2091454239]
+position = Vector2(8, 51)
 script = ExtResource("1_nq5a4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=424112540]
@@ -135,6 +142,7 @@ offset_bottom = 71.5
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x8oub")
 icon = ExtResource("3_kw1ds")
 
 [node name="Buttons" type="HBoxContainer" parent="CanvasLayer" unique_id=761483534]
@@ -152,6 +160,7 @@ custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7b0at")
 text = "-"
 
 [node name="ButtonMultiplier" type="TextureButton" parent="CanvasLayer/Buttons" unique_id=679998562]
@@ -177,4 +186,5 @@ custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme_override_constants/outline_size = 32
 theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_70xud")
 text = "+"

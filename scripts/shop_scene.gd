@@ -1,6 +1,5 @@
 extends Node2D
 
-const TEST = preload("uid://dglunesu7aubi")
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var customer_node: Node2D = $Customer
 
