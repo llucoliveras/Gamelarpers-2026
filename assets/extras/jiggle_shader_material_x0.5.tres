@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://djxnqlru5pcdp"]
+
+[ext_resource type="Shader" uid="uid://djknm1rxoikwl" path="res://assets/extras/jiggle_shader.gdshader" id="1_8ha2t"]
+
+[resource]
+shader = ExtResource("1_8ha2t")
+shader_parameter/jiggle = 2.5
+shader_parameter/speed = 2.0
