@@ -1,6 +1,5 @@
 [gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cwt42aggshphm"]
 
-[ext_resource type="Texture2D" uid="uid://s7giawc2rtqd" path="res://assets/images/customers/dona_vella.png" id="1_6jawr"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="1_nodsq"]
 [ext_resource type="Resource" uid="uid://drm2r3tpooue3" path="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_entrada.dialogue" id="1_ruhhx"]
 [ext_resource type="Resource" uid="uid://cluy7x3tjbywn" path="res://assets/dialogues/Dia 3/Avia/Dia3_AviaCarme_error_mida_gran.dialogue" id="2_yrail"]
