@@ -136,6 +136,6 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_n0d5s")
-text = "Save"
+text = "Confirmar"
 
 [connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/SaveButton" to="." method="_on_button_pressed"]

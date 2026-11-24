@@ -1,6 +1,7 @@
 class_name CustomerData
 extends Resource
 
+@export var id: int
 @export var customer_name: String
 @export var portrait: Texture2D
 @export var target_mesure: int

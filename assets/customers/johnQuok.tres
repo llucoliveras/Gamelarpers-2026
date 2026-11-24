@@ -9,6 +9,7 @@
 
 [resource]
 script = ExtResource("8_xgn5t")
+id = 3
 portrait = ExtResource("7_y4vkd")
 target_mesure = 47
 dialogue_entry = ExtResource("1_m65o0")

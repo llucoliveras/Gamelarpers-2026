@@ -9,6 +9,7 @@
 
 [resource]
 script = ExtResource("6_4dfvi")
+id = 1
 customer_name = "JohnQuuk"
 portrait = ExtResource("5_wfy3v")
 target_mesure = 5

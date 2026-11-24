@@ -12,6 +12,7 @@
 
 [resource]
 script = ExtResource("1_nodsq")
+id = 10
 customer_name = "AviaDia3"
 portrait = ExtResource("7_ruhhx")
 target_mesure = 20

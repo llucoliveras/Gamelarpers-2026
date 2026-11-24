@@ -8,12 +8,15 @@
 [ext_resource type="Resource" uid="uid://cg5enjrva70je" path="res://assets/dialogues/Dia 3/Amir/Dia3_Informatic_Sortida.dialogue" id="6_t1lto"]
 [ext_resource type="Texture2D" uid="uid://hyvv0upr7lrd" path="res://assets/images/customers/programador.png" id="7_pdpg0"]
 [ext_resource type="Script" uid="uid://n5hp4ggtd0fw" path="res://scripts/CustomerData.gd" id="8_a3yph"]
+[ext_resource type="Texture2D" uid="uid://r6njhgskgd5a" path="res://assets/images/objectes/ordinador.png" id="9_w8d74"]
 
 [resource]
 script = ExtResource("8_a3yph")
+id = 12
 portrait = ExtResource("7_pdpg0")
-target_mesure = 13
-target_quantity = 100
+target_mesure = 6
+target_quantity = 30
+target_image = ExtResource("9_w8d74")
 dialogue_entry = ExtResource("1_w0pt5")
 dialogue_error_lower_1 = ExtResource("4_cclaa")
 dialogue_error_higher_1 = ExtResource("2_w8d74")

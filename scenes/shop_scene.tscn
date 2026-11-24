@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://je1xyhj483bh" path="res://scenes/customer.tscn" id="2_hovpq"]
 [ext_resource type="Texture2D" uid="uid://bemh1u2b502n1" path="res://assets/images/fons_de_pantalla/Interior Botiga.jpeg" id="2_ykrk4"]
 [ext_resource type="PackedScene" uid="uid://do7obudvsjjyk" path="res://assets/dialogues/balloon.tscn" id="3_hovpq"]
+[ext_resource type="Script" uid="uid://cv46g4rl4ehqd" path="res://scenes/customer_progress_bar.gd" id="5_fdhsn"]
 
 [sub_resource type="Animation" id="Animation_tlo24"]
 length = 0.001
@@ -128,10 +129,24 @@ _data = {
 [node name="ShopScene" type="Node2D" unique_id=1255581658]
 script = ExtResource("1_p7evi")
 
-[node name="BackgroundImage" type="TextureRect" parent="." unique_id=2028789631]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1066392435]
+layer = -1
+
+[node name="BackgroundImage" type="TextureRect" parent="CanvasLayer" unique_id=2028789631]
 offset_right = 1150.0
 offset_bottom = 650.0
 texture = ExtResource("2_ykrk4")
+
+[node name="CustomerProgressBar" type="HBoxContainer" parent="CanvasLayer" unique_id=994281526]
+unique_name_in_owner = true
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 226.0
+offset_right = -226.0
+offset_bottom = 60.0
+grow_horizontal = 2
+alignment = 1
+script = ExtResource("5_fdhsn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=143911759]
 libraries/ = SubResource("AnimationLibrary_hwlf8")

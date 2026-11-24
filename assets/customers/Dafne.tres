@@ -10,6 +10,7 @@
 
 [resource]
 script = ExtResource("1_luktb")
+id = 4
 customer_name = "Dafne"
 portrait = ExtResource("5_f1heh")
 target_quantity = 55

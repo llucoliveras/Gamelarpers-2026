@@ -8,13 +8,16 @@
 [ext_resource type="Resource" uid="uid://bhq43gk12okhn" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_error_numero_petit.dialogue" id="5_c3x1s"]
 [ext_resource type="Resource" uid="uid://fu6x2jqi8cpi" path="res://assets/dialogues/Dia 3/JohnQuok/Dia3_JohnQuok_sortida.dialogue" id="6_j5p0p"]
 [ext_resource type="Texture2D" uid="uid://bixlaooojclcd" path="res://assets/images/customers/jungkook.png" id="7_v6qtm"]
+[ext_resource type="Texture2D" uid="uid://b26oxh4w21nka" path="res://assets/images/objectes/rem.png" id="9_ia365"]
 
 [resource]
 script = ExtResource("1_xajv8")
+id = 11
 customer_name = "JohnQuickdia3"
 portrait = ExtResource("7_v6qtm")
-target_mesure = 20
+target_mesure = 6
 target_quantity = 100
+target_image = ExtResource("9_ia365")
 dialogue_entry = ExtResource("1_u5h83")
 dialogue_error_lower_1 = ExtResource("4_dsto6")
 dialogue_error_higher_1 = ExtResource("2_cw0gx")

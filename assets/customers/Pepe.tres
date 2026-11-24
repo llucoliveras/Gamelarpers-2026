@@ -10,6 +10,7 @@
 
 [resource]
 script = ExtResource("5_s7uda")
+id = 7
 customer_name = "Pepe"
 portrait = ExtResource("4_gv6t1")
 target_quantity = 60

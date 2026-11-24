@@ -2,6 +2,7 @@ class_name LevelManager
 extends Node
 
 const SCENE_TRANSITION = preload("uid://5qh6pynhc5ju")
+var current_level: String = "res://scenes/main_menu.tscn"
 
 func restart_level() -> void:
 	get_tree().reload_current_scene()
@@ -15,7 +16,7 @@ func load_level(path: String) -> Node:
 	
 	# 2. Clear old nodes (keeping SceneTransition)
 	for node in get_tree().current_scene.get_children():
-		if node.name in ["SceneTransition"]: 
+		if node.name in ["SceneTransition", "CustomerProgressBar"]: 
 			continue
 		else: 
 			node.queue_free()

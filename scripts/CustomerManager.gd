@@ -15,7 +15,6 @@ const AVIA_DIA_3 = preload("uid://cwt42aggshphm")
 const JOHN_QUOKDIA_3 = preload("uid://cp7bil4g5kaop")
 const INFORMATICO_DIA_3 = preload("uid://dk4psvbaubo2d")
 
-# informatico/amir, avia carme, jhon quok, dafne, pallasso, pepe, informatico/amir dia 3, jhon quok dia 3, pallasso dia 3, rata
 var customer_queue: Array[CustomerData] = [
 	INFORMATICO,
 	AVIA,
@@ -35,7 +34,6 @@ var current_index: int = 0
 var current_customer: CustomerData = null
 
 func get_next_customer() -> CustomerData:
-	print(current_index, customer_queue)
 	if current_index < customer_queue.size():
 		current_customer = customer_queue[current_index]
 		current_index += 1
@@ -45,7 +43,6 @@ func get_next_customer() -> CustomerData:
 		return null # Fin de la cola / día completado
 
 func validate_player_number(number: float = -1, target: float = -1) -> int:
-	print(number, ", ", target)
 	if not current_customer:
 		return -999
 		

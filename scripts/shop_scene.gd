@@ -4,6 +4,7 @@ const END_SCENE = preload("uid://bedchet5mfaex")
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var customer_node: Node2D = $Customer
+@onready var customer_progress_bar: CustomerProgressBar = %CustomerProgressBar
 
 var scene_transition: SceneTransition
 var mesure_player_guess: int = -1
@@ -21,19 +22,22 @@ func setup(params: Dictionary) -> void:
 	if customer and customer.portrait:
 		customer_node.change_sprite(customer.portrait)
 	
+	if customer and customer.id:
+		customer_progress_bar.set_progress(customer.id)
+	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	animation_player.animation_finished.connect(_on_animation_player_animation_finished)
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	print("animation ended ", anim_name)
 	match(anim_name):
 		"shop_entry":
 			DialogueManager.show_dialogue_balloon(customer.dialogue_entry)
 			animation_player.play("idle")
 		"shop_exit":
 			customer = CustomerManager.get_next_customer()
+			customer_progress_bar.set_progress(customer.id)
 			mesure_player_guess = -1
 			if customer == null:
 				_end_game()
