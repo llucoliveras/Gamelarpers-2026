@@ -4,6 +4,7 @@ extends Node2D
 @onready var object_image: TextureRect = %ObjectImage
 @onready var h_slider: HSlider = %HSlider
 @onready var save_button: Button = %SaveButton
+@onready var objectiuCM: Label = %objectiuCM
 
 var scene_transition: SceneTransition
 var params: Dictionary
@@ -11,9 +12,14 @@ var max_container_width: float = 0.0
 
 func setup(new_params: Dictionary) -> void:
 	params = new_params
+	print("--- setup() llamado --- params: ", params)
+	update_customer_ui()
 
 func _ready() -> void:
 	h_slider.value_changed.connect(_on_h_slider_value_changed)
+	
+	print("--- _ready() ejecutado --- params actuales: ", params)
+	update_customer_ui()
 	
 	var parent_max_size = aspect_ratio_container.custom_maximum_size
 	var image_minimum_size = object_image.custom_minimum_size
@@ -23,6 +29,16 @@ func _ready() -> void:
 	if max_container_width > 0:
 		var proportion_of_total = (image_minimum_size.x * 100.0) / max_container_width
 		h_slider.value = proportion_of_total
+
+func update_customer_ui() -> void:
+	if params and params.has("customer") and params.customer:
+		print("Target mesure del cliente encontrado: ", params.customer.target_mesure)
+		if objectiuCM:
+			objectiuCM.text = "Mida esperada del xuixu: %d centímetres" % params.customer.target_mesure
+	else:
+		print("Aviso: params o customer todavía están vacíos en este punto.")
+		if objectiuCM:
+			objectiuCM.text = "Mida esperada del xuixu: -- centímetres"
 
 func _on_button_pressed() -> void:
 	var value: float = h_slider.value

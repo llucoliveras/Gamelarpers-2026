@@ -4,8 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://dhluk25dfemnq" path="res://assets/images/fons_de_pantalla/fonsFase2.jpeg" id="2_70xud"]
 [ext_resource type="Texture2D" uid="uid://bg3gfxs3pwrvv" path="res://assets/images/icon.svg" id="3_kw1ds"]
 [ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="4_70xud"]
+[ext_resource type="Texture2D" uid="uid://12lawrla7fml" path="res://assets/images/anem-hi.png" id="5_70xud"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8oub"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8oub"]
+bg_color = Color(0.21950099, 0.21950105, 0.21950087, 0.47058824)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7b0at"]
 
@@ -30,24 +40,30 @@ size_flags_vertical = 3
 texture = ExtResource("2_70xud")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1498357046]
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.57500005
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.57500005
 offset_left = -256.0
-offset_top = -236.0
+offset_top = -308.60004
 offset_right = 256.0
-offset_bottom = -3.999817
+offset_bottom = 59.399963
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 alignment = 1
 
+[node name="ObjectiuCM" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=102509568]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
 [node name="TargetImage" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=1786856914]
 unique_name_in_owner = true
-custom_maximum_size = Vector2(500, 220)
+custom_minimum_size = Vector2(0, 180)
+custom_maximum_size = Vector2(500, 180)
 layout_mode = 2
 texture = ExtResource("3_kw1ds")
 stretch_mode = 5
@@ -127,6 +143,7 @@ stretch_mode = 5
 [node name="XuixoCounter" type="Label" parent="CanvasLayer/VBoxContainer/XuixoContainer" unique_id=496546229]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 horizontal_alignment = 2
 
 [node name="SaveButton" type="Button" parent="CanvasLayer" unique_id=21654312]
@@ -136,14 +153,15 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -136.0
-offset_top = -71.5
-offset_bottom = 71.5
+offset_left = -140.0
+offset_top = -129.0
+offset_right = -5.0
+offset_bottom = 128.0
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_vertical = 3
-theme_override_styles/normal = SubResource("StyleBoxEmpty_x8oub")
-icon = ExtResource("3_kw1ds")
+theme_override_styles/normal = SubResource("StyleBoxFlat_x8oub")
+icon = ExtResource("5_70xud")
 
 [node name="Buttons" type="HBoxContainer" parent="CanvasLayer" unique_id=761483534]
 offset_left = 357.0

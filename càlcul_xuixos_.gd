@@ -9,16 +9,44 @@ var params: Dictionary = {}
 # Límite visual de xuxos configurado a 6
 const LIMITE_VISUAL = 6
 
+@onready var objectiu_cm: Label = %ObjectiuCM
+
+func setup(new_params: Dictionary) -> void: 
+	if new_params:
+		params = new_params
+		print("--- setup() en CàlculXuixos --- params recibidos: ", params)
+		if new_params.customer and new_params.customer.target_image:
+			%TargetImage.texture = new_params.customer.target_image
+			
+	update_customer_ui()
+	actualizar_fase_dos()
+
 func _ready() -> void:
 	%ButtonPlus.pressed.connect(_al_pulsar_mas)
 	%ButtonMinus.pressed.connect(_al_pulsar_menos)
 	%SaveButton.pressed.connect(_al_pulsar_guardar)
+	
+	print("--- _ready() en CàlculXuixos --- params actuales: ", params)
+	update_customer_ui()
 	
 	# Configuramos los xuxos del contenedor al arrancar por seguridad
 	preparar_contenedor_xuxos()
 	
 	# Forzamos la primera actualización visual
 	actualizar_fase_dos()
+
+func update_customer_ui() -> void:
+	if params and params.has("customer") and params.customer:
+		var medida_cliente: int = params.customer.target_mesure
+		if medida_cliente <= 0: medida_cliente = GENERIC_XUIXO_SIZE
+		print("Medida del cliente detectada correctamente para los xuixos: ", medida_cliente)
+		if objectiu_cm:
+			# Mostramos el dato de la fase 1 para que puedan calcular la cantidad
+			objectiu_cm.text = "Mida de cada xuixo: %d cm" % medida_cliente
+	else:
+		print("Aviso: params o customer están vacíos al cargar CàlculXuixos_.")
+		if objectiu_cm:
+			objectiu_cm.text = "Mida de cada xuixo: -- cm"
 
 # Función para asegurar que todos los huecos tienen textura y tamaño controlado
 func preparar_contenedor_xuxos() -> void:		
@@ -71,11 +99,3 @@ func actualizar_fase_dos() -> void:
 
 	%XuixoCounter.text = "x " + str(quantitatXuixo)
 	%XuixoCounter.visible = quantitatXuixo > LIMITE_VISUAL
-
-func setup(new_params) -> void: 
-	if new_params:
-		params = new_params
-		if new_params.customer and new_params.customer.target_image:
-			%TargetImage.texture = new_params.customer.target_image
-			
-	actualizar_fase_dos()

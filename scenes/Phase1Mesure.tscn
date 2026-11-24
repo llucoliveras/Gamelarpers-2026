@@ -5,6 +5,41 @@
 [ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="3_8cg0o"]
 [ext_resource type="Script" uid="uid://b8kthlws6qnsp" path="res://scripts/mesure_line.gd" id="4_4tpf0"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jtvhe"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6156863, 0.39215687, 0.21960784, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 12
+expand_margin_left = 12.0
+expand_margin_top = 12.0
+expand_margin_right = 12.0
+expand_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4t4i"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.6156863, 0.39215687, 0.21960784, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 3
+corner_detail = 12
+expand_margin_left = 12.0
+expand_margin_top = 12.0
+expand_margin_right = 12.0
+expand_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0d5s"]
+bg_color = Color(0.16945976, 0.25395846, 0.35871133, 1)
+
 [node name="Phase1Mesure" type="Node2D" unique_id=1514824332]
 script = ExtResource("1_n0d5s")
 
@@ -32,6 +67,12 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer" unique_id=1102539320]
 layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="objectiuCM" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=2014492321]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=1908462118]
 layout_mode = 2
@@ -83,13 +124,18 @@ theme_override_constants/margin_right = 25
 
 [node name="HSlider" type="HSlider" parent="CanvasLayer/CenterContainer/VBoxContainer/MarginContainer2" unique_id=966409600]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_jtvhe")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_g4t4i")
 max_value = 50.0
 step = 0.1
 
 [node name="SaveButton" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=8240273]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_n0d5s")
 text = "Save"
 
 [connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/SaveButton" to="." method="_on_button_pressed"]

@@ -1,20 +1,7 @@
 [gd_scene format=3 uid="uid://lron4ke42nsp"]
 
 [ext_resource type="Script" uid="uid://bbxmlrhu3uvsp" path="res://scripts/main_menu.gd" id="1_06t4h"]
-[ext_resource type="Material" uid="uid://dtmspo08nsp88" path="res://assets/extras/jiggle_shader_material.tres" id="2_wu84c"]
-[ext_resource type="Texture2D" uid="uid://b5non1q6dskv6" path="res://assets/images/objectes/xuixo.png" id="3_8ln24"]
-[ext_resource type="Material" uid="uid://dpoljvphj0bxh" path="res://assets/extras/jiggle_shader_material_x2.tres" id="3_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://dl6tsd7fw6u8k" path="res://assets/images/customers/protagonista.png" id="4_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://70tq5kjvea2b" path="res://assets/images/customers/rata.png" id="5_8ln24"]
-
-[sub_resource type="Gradient" id="Gradient_rtw2f"]
-interpolation_mode = 2
-offsets = PackedFloat32Array(0, 0.2580645, 0.60215056, 0.87455195, 1)
-colors = PackedColorArray(0.4509804, 0.42352942, 0.92941177, 1, 0.62352943, 0.62352943, 0.92941177, 1, 0.83137256, 0.75686276, 0.9254902, 1, 0.99607843, 0.9764706, 1, 1, 0.9490196, 0.8745098, 0.84313726, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_ttxx8"]
-gradient = SubResource("Gradient_rtw2f")
-fill_to = Vector2(0.52991456, 1)
+[ext_resource type="Texture2D" uid="uid://ve6h3v3yfbd3" path="res://assets/images/fons_de_pantalla/portada.jpeg" id="2_ekxnf"]
 
 [node name="MainMenu" type="CanvasLayer" unique_id=917246701]
 script = ExtResource("1_06t4h")
@@ -25,74 +12,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_ttxx8")
+texture = ExtResource("2_ekxnf")
 
-[node name="GameTitle" type="Label" parent="." unique_id=1846089551]
-material = ExtResource("2_wu84c")
-offset_left = 55.999996
-offset_top = 189.0
-offset_right = 1280.0
-offset_bottom = 424.0
-rotation = -0.13715084
-scale = Vector2(0.6423015, 0.6423015)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 193
-text = "Mida Incorrecte"
-
-[node name="ExtrudeText" type="Label" parent="GameTitle" unique_id=743937822]
-layout_mode = 0
-offset_left = 10.0
-offset_top = -12.5
-offset_right = 1083.0
-offset_bottom = 222.5
-theme_override_font_sizes/font_size = 193
-text = "Mida Incorrecte"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1971064812]
-anchors_preset = 3
-anchor_left = 1.0
+[node name="VBoxContainer" type="HBoxContainer" parent="." unique_id=11779623]
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -66.0
-offset_top = -100.0
-grow_horizontal = 0
+offset_left = -138.0
+offset_top = -88.0
+offset_right = 301.0
+offset_bottom = -2.0
+grow_horizontal = 2
 grow_vertical = 0
-offset_transform_enabled = true
-offset_transform_position = Vector2(-100, -100)
 offset_transform_visual_only = false
-theme_override_constants/separation = 30
+theme_override_constants/separation = 52
 
 [node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=401242353]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 90
+theme_override_constants/h_separation = 43
+theme_override_font_sizes/font_size = 42
 text = "Play"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=75553409]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 42
 text = "Exit"
-
-[node name="Xuixo" type="Sprite2D" parent="." unique_id=31252612]
-material = ExtResource("3_rtw2f")
-position = Vector2(376.99997, 564)
-rotation = 0.6943817
-scale = Vector2(0.21545167, 0.21545167)
-texture = ExtResource("3_8ln24")
-flip_h = true
-
-[node name="Protagonista" type="Sprite2D" parent="." unique_id=283409013]
-material = ExtResource("3_rtw2f")
-position = Vector2(445.99994, 579.99994)
-rotation = 0.24309891
-scale = Vector2(0.4709906, 0.4709906)
-texture = ExtResource("4_rtw2f")
-
-[node name="Rata" type="Sprite2D" parent="." unique_id=930851423]
-material = ExtResource("3_rtw2f")
-position = Vector2(-8.999973, 111)
-rotation = 0.7658696
-scale = Vector2(0.23795038, 0.23795038)
-texture = ExtResource("5_8ln24")
