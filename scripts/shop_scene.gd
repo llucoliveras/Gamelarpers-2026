@@ -37,11 +37,12 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 			animation_player.play("idle")
 		"shop_exit":
 			customer = CustomerManager.get_next_customer()
-			customer_progress_bar.set_progress(customer.id)
 			mesure_player_guess = -1
+			quantity_player_guess = -1
 			if customer == null:
 				_end_game()
 			else:
+				customer_progress_bar.set_progress(customer.id)
 				customer_node.change_sprite(customer.portrait)
 				animation_player.play("shop_entry")
 
